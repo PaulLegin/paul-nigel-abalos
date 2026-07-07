@@ -56,8 +56,13 @@ a { text-decoration: none; transition: color 0.3s ease; }
               radial-gradient(circle at 90% 78%, rgba(15,76,129,.2), transparent 40%), 
               linear-gradient(135deg, #02060c 0%, #081421 52%, #050b14 100%); 
   display: flex;
-  align-items: center;
-  padding-top: 80px; /* Offset for navbar */
+  flex-direction: column;
+  padding-top: 110px; /* Offset for navbar */
+  padding-bottom: 60px;
+}
+.hero-section > .container {
+  margin: auto;
+  z-index: 1;
 }
 .hero-grid { 
   position: absolute; inset: 0; 
@@ -68,7 +73,6 @@ a { text-decoration: none; transition: color 0.3s ease; }
   opacity: .7; 
   z-index: 0;
 }
-.hero-section .container { z-index: 1; }
 
 .profile-frame { 
   width: clamp(200px, 30vw, 340px); 
