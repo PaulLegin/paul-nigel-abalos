@@ -99,31 +99,31 @@
           <p class="lead hero-lead">Assistant Professor in Information Technology | AI & Data Analytics Researcher | Full-Stack Web Developer | Information Systems | Smart Education & Digital Transformation</p>
           <div class="d-flex flex-wrap gap-3 mt-4">
             <a href="#projects" class="btn btn-primary"><i class="bi bi-window-stack me-2"></i>Projects</a>
-            <a href="assets/docs/resume.pdf" target="_blank" class="btn btn-outline-info"><i class="bi bi-file-earmark-person me-2"></i>Resume</a>
+            <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#resumeModal"><i class="bi bi-file-earmark-person me-2"></i>Resume</button>
             <a href="#contact" class="btn btn-outline-light"><i class="bi bi-send me-2"></i>Contact Me</a>
             <a href="https://orcid.org/0000-0003-1866-9274" target="_blank" rel="noopener" class="btn btn-soft"><i class="bi bi-journal-text me-2"></i>ORCID</a>
           </div>
 
           <div class="row g-3 hero-stats">
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-md-3 d-flex">
               <div class="stat-card">
                 <span class="stat-number">DIT</span>
                 <span class="stat-label">Doctoral Degree</span>
               </div>
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-md-3 d-flex">
               <div class="stat-card">
                 <span class="stat-number">3+</span>
                 <span class="stat-label">Web Systems</span>
               </div>
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-md-3 d-flex">
               <div class="stat-card">
                 <span class="stat-number">AI & IS</span>
                 <span class="stat-label">Research Focus</span>
               </div>
             </div>
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-md-3 d-flex">
               <div class="stat-card">
                 <span class="stat-number">Full-Stack</span>
                 <span class="stat-label">Web & PWA</span>
@@ -335,6 +335,31 @@
   <button id="backToTop" class="back-to-top" aria-label="Back to top">
     <i class="bi bi-chevron-up"></i>
   </button>
+
+  <!-- Resume Preview Modal -->
+  <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content resume-modal-content">
+        <div class="modal-header border-secondary border-opacity-25 px-4 py-3">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-file-earmark-person text-info fs-4"></i>
+            <div>
+              <h5 class="modal-title mb-0 fw-bold" id="resumeModalLabel">Curriculum Vitae / Resume</h5>
+              <small class="text-muted">Dr. Paul Nigel S. Abalos, DIT</small>
+            </div>
+          </div>
+          <div class="d-flex gap-2 ms-auto align-items-center">
+            <a href="assets/docs/resume.pdf" target="_blank" rel="noopener" class="btn btn-sm btn-outline-info d-none d-sm-inline-flex align-items-center" title="Open in new tab"><i class="bi bi-box-arrow-up-right me-1"></i>New Tab</a>
+            <a href="assets/docs/resume.pdf" download="Paul_Nigel_Abalos_Resume.pdf" class="btn btn-sm btn-primary d-inline-flex align-items-center" title="Download Resume"><i class="bi bi-download me-1"></i>Download PDF</a>
+            <button type="button" class="btn-close btn-close-white ms-2" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="modal-body p-0 resume-modal-body">
+          <iframe src="assets/docs/resume.pdf#toolbar=1&navpanes=0" class="w-100 h-100" style="min-height: 75vh; border: none;" title="Resume Preview"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer class="footer py-4">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
