@@ -18,6 +18,39 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <title>Paul Nigel S. Abalos, DIT | Portfolio</title>
+  
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dr. Paul Nigel S. Abalos",
+    "honorificPrefix": "Dr.",
+    "honorificSuffix": "DIT",
+    "jobTitle": "Assistant Professor in Information Technology & Full-Stack Developer",
+    "worksFor": {
+      "@type": "CollegeOrUniversity",
+      "name": "Pangasinan State University – San Carlos Campus"
+    },
+    "url": "https://paullegin.github.io/paul-nigel-abalos/",
+    "sameAs": [
+      "https://orcid.org/0000-0003-1866-9274",
+      "https://www.linkedin.com/in/paulnigelabalos/",
+      "https://www.facebook.com/leginluap"
+    ],
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Data Analytics",
+      "Full-Stack Web Development",
+      "Information Systems",
+      "Progressive Web Apps",
+      "PHP",
+      "MySQL",
+      "JavaScript"
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,6 +102,33 @@
             <a href="#contact" class="btn btn-outline-light"><i class="bi bi-send me-2"></i>Contact Me</a>
             <a href="https://orcid.org/0000-0003-1866-9274" target="_blank" rel="noopener" class="btn btn-soft"><i class="bi bi-journal-text me-2"></i>ORCID</a>
           </div>
+
+          <div class="row g-3 hero-stats">
+            <div class="col-6 col-md-3">
+              <div class="stat-card">
+                <span class="stat-number">DIT</span>
+                <span class="stat-label">Doctoral Degree</span>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-card">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Web Systems</span>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-card">
+                <span class="stat-number">AI & IS</span>
+                <span class="stat-label">Research Focus</span>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-card">
+                <span class="stat-number">Full-Stack</span>
+                <span class="stat-label">Web & PWA</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -99,13 +159,16 @@
           <p class="section-subtitle mx-auto">A focused showcase of practical, responsive, and user-centered web development projects.</p>
         </div>
         <div class="row g-4">
-          <div class="col-lg-6">
+          <div class="col-lg-4 col-md-6">
             <article class="project-card h-100 reveal">
               <div class="project-visual restaurant-visual">
                 <i class="bi bi-cup-hot"></i>
               </div>
               <div class="project-body">
-                <span class="project-badge">Restaurant Website</span>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="project-badge mb-0">Restaurant Website</span>
+                  <span class="status-indicator"><span class="status-dot"></span> Live</span>
+                </div>
                 <h3>La Mesa</h3>
                 <p>A professional restaurant website designed to present food offerings, brand identity, customer information, and online engagement through a clean and responsive interface.</p>
                 <div class="tech-stack">
@@ -117,13 +180,16 @@
               </div>
             </article>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-4 col-md-6">
             <article class="project-card h-100 reveal">
               <div class="project-visual chauffeur-visual">
                 <i class="bi bi-car-front"></i>
               </div>
               <div class="project-body">
-                <span class="project-badge">Web and Mobile System</span>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="project-badge mb-0">Web & Mobile System</span>
+                  <span class="status-indicator"><span class="status-dot"></span> Live</span>
+                </div>
                 <h3>SakayPH</h3>
                 <p>A web-based service system concept for managing SakayPH bookings, customer requests, service details, and administrative workflows for a professional transportation service.</p>
                 <div class="tech-stack">
@@ -131,6 +197,27 @@
                 </div>
                 <div class="project-actions mt-4">
                   <a href="https://sakayph.unaux.com" target="_blank" rel="noopener" class="btn btn-outline-info"><i class="bi bi-chat-left-text me-2"></i>Visit Website</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <article class="project-card h-100 reveal">
+              <div class="project-visual pickledink-visual">
+                <i class="bi bi-trophy"></i>
+              </div>
+              <div class="project-body">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <span class="project-badge mb-0">Sports Queue & Analytics PWA</span>
+                  <span class="status-indicator"><span class="status-dot"></span> Live</span>
+                </div>
+                <h3>PickleDink</h3>
+                <p>A real-time queue management and analytics system for pickleball clubs featuring automated match rotation, dynamic Elo rating leaderboards, QR self check-in, TV announcer mode with TTS, and targeted push notifications.</p>
+                <div class="tech-stack">
+                  <span>HTML</span><span>CSS</span><span>Vanilla JS</span><span>AJAX</span><span>Bootstrap</span><span>PHP</span><span>MySQL</span><span>PWA</span><span>Web Speech API</span><span>jsQR</span><span>Responsive Web Design</span>
+                </div>
+                <div class="project-actions mt-4">
+                  <a href="https://pickledink.unaux.com" target="_blank" rel="noopener" class="btn btn-outline-info"><i class="bi bi-box-arrow-up-right me-2"></i>Visit Website</a>
                 </div>
               </div>
             </article>
@@ -184,7 +271,7 @@
           <div class="col-md-4">
             <h4 class="text-center mb-4 text-info" style="font-family: 'Outfit', sans-serif; font-weight: 700;">Development & IT</h4>
             <div class="skills-cloud">
-              <span>Full-Stack Web Dev</span><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Bootstrap</span><span>HTML5</span><span>CSS3</span><span>Information Systems</span><span>Networking</span>
+              <span>Full-Stack Web Dev</span><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Bootstrap</span><span>HTML5</span><span>CSS3</span><span>PWA</span><span>Information Systems</span><span>Networking</span>
             </div>
           </div>
           <div class="col-md-4">
@@ -212,10 +299,10 @@
         </div>
         <div class="row g-4">
           <div class="col-md-6 col-lg-3 reveal">
-            <a class="contact-card" href="mailto:paulnigelabalos@gmail.com">
-              <i class="bi bi-envelope"></i>
+            <a class="contact-card" href="mailto:paulnigelabalos@gmail.com" title="Send an email to paulnigelabalos@gmail.com">
+              <i class="bi bi-envelope-at"></i>
               <strong>Email</strong>
-              <span>Gmail!</span>
+              <span>paulnigelabalos@gmail.com</span>
             </a>
           </div>
           <div class="col-md-6 col-lg-3 reveal">
