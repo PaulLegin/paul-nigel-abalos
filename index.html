@@ -1,33 +1,38 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Professional portfolio of Dr. Paul Nigel S. Abalos, DIT — Assistant Professor in Information Technology, AI & Data Analytics Researcher, and Full-Stack Web Developer.">
-  
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Portfolio of Paul Nigel S. Abalos, DIT — Full-Stack Web Developer and Assistant Professor in Information Technology. Builder of real-time sports PWAs, custom logistics, and community web systems.">
+  <meta name="keywords" content="Paul Nigel S. Abalos, DIT, Full-Stack Developer, Web Developer, PHP, MySQL, JavaScript, PWA, University of the Cordilleras, Pangasinan State University">
+  <meta name="author" content="Paul Nigel S. Abalos, DIT">
+
   <!-- Open Graph / Social Media Meta Tags -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Paul Nigel S. Abalos, DIT | Portfolio">
-  <meta property="og:description" content="Assistant Professor in Information Technology, AI & Data Analytics Researcher, and Full-Stack Web Developer.">
-  <meta property="og:image" content="https://paullegin.github.io/paul-nigel-abalos/assets/img/favicon.png">
+  <meta property="og:title" content="Paul Nigel S. Abalos, DIT | Full-Stack Developer &amp; Educator">
+  <meta property="og:description" content="Full-Stack Developer and IT Educator building practical web applications, community tools, and real-time PWAs.">
+  <meta property="og:image" content="assets/img/projects/pickledink.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Paul Nigel S. Abalos, DIT | Portfolio">
-  <meta name="twitter:description" content="Assistant Professor in Information Technology, AI & Data Analytics Researcher, and Full-Stack Web Developer.">
-  <meta name="twitter:image" content="https://paullegin.github.io/paul-nigel-abalos/assets/img/favicon.png">
+  <meta name="twitter:description" content="Full-Stack Developer and IT Educator building practical web applications, community tools, and real-time PWAs.">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
-  <title>Paul Nigel S. Abalos, DIT | Portfolio</title>
+  <title>Paul Nigel S. Abalos, DIT | Full-Stack Developer &amp; IT Educator</title>
   
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Dr. Paul Nigel S. Abalos",
-    "honorificPrefix": "Dr.",
+    "name": "Paul Nigel S. Abalos",
     "honorificSuffix": "DIT",
-    "jobTitle": "Assistant Professor in Information Technology & Full-Stack Developer",
+    "jobTitle": "Full-Stack Developer & Assistant Professor in Information Technology",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of the Cordilleras"
+    },
     "worksFor": {
       "@type": "CollegeOrUniversity",
       "name": "Pangasinan State University – San Carlos Campus"
@@ -37,98 +42,153 @@
       "https://orcid.org/0000-0003-1866-9274",
       "https://www.linkedin.com/in/paulnigelabalos/",
       "https://www.facebook.com/leginluap"
-    ],
-    "knowsAbout": [
-      "Artificial Intelligence",
-      "Data Analytics",
-      "Full-Stack Web Development",
-      "Information Systems",
-      "Progressive Web Apps",
-      "PHP",
-      "MySQL",
-      "JavaScript"
     ]
   }
   </script>
 
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 & Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
   <link href="assets/css/styles.css" rel="stylesheet">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
+
+  <!-- Ambient Canvas Background -->
   <canvas id="bgNetworkCanvas" class="bg-network-canvas"></canvas>
+
+  <!-- Reading / Scroll Progress Bar -->
   <div class="scroll-progress-container">
     <div class="scroll-progress-bar" id="progressBar"></div>
   </div>
 
-  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+  <!-- Glass Navbar -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top glass-nav">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#home">PN<span>A</span></a>
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <span class="brand-monogram">PNA</span>
+        <div class="brand-info d-none d-sm-block">
+          <span class="brand-name">Paul Nigel Abalos</span>
+          <span class="brand-suffix">DIT &bull; Full-Stack Dev</span>
+        </div>
+      </a>
+
+      <!-- Availability Pill -->
+      <div class="d-none d-xl-flex align-items-center ms-3">
+        <span class="availability-pill">
+          <span class="pulse-dot"></span> Open for Remote Projects &amp; Collaboration
+        </span>
+      </div>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills &amp; Tech</a></li>
           <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <button type="button" class="btn btn-sm btn-outline-brand" data-bs-toggle="modal" data-bs-target="#resumeModal">
+              <i class="bi bi-file-earmark-person me-1"></i>Resume
+            </button>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <!-- Hero Section -->
   <header id="home" class="hero-section">
-    <div class="hero-grid"></div>
-    <div class="container position-relative reveal">
-      <div class="row align-items-center py-5">
-        <div class="col-lg-5 text-center text-lg-start mb-5 mb-lg-0">
-          <div class="profile-frame mx-auto mx-lg-0">
-            <img src="assets/img/profile.jpg" alt="Profile photo of Paul Nigel S. Abalos" class="profile-photo">
-          </div>
-          <!--<p class="small text-info mt-3 mb-0">Replace this photo at <code>assets/img/profile.jpg</code></p>-->
-        </div>
+    <div class="hero-mesh"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center py-3 py-lg-4">
         <div class="col-lg-7">
-          <p class="eyebrow">Academic • Researcher • Developer</p>
-          <h1 class="display-4 fw-bold">Paul Nigel S. Abalos, <span>DIT</span></h1>
-          <p class="lead hero-lead">Assistant Professor in Information Technology | AI & Data Analytics Researcher | Full-Stack Web Developer | Information Systems | Smart Education & Digital Transformation</p>
-          <div class="d-flex flex-wrap gap-3 mt-4">
-            <a href="#projects" class="btn btn-primary"><i class="bi bi-window-stack me-2"></i>Projects</a>
-            <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#resumeModal"><i class="bi bi-file-earmark-person me-2"></i>Resume</button>
-            <a href="#contact" class="btn btn-outline-light"><i class="bi bi-send me-2"></i>Contact Me</a>
-            <a href="https://orcid.org/0000-0003-1866-9274" target="_blank" rel="noopener" class="btn btn-soft"><i class="bi bi-journal-text me-2"></i>ORCID</a>
+          <div class="hero-badge">
+            <span class="hero-badge-tag"><i class="bi bi-terminal me-1"></i> Full-Stack Developer</span>
+            <span class="hero-badge-divider"></span>
+            <span class="hero-badge-text">IT Educator &bull; DIT, Univ. of the Cordilleras</span>
           </div>
 
-          <div class="row g-3 hero-stats">
-            <div class="col-6 col-md-3 d-flex">
-              <div class="stat-card">
-                <span class="stat-number">DIT</span>
-                <span class="stat-label">Doctoral Degree</span>
+          <h1 class="hero-title display-4 fw-bold">
+            Building Practical Web Systems &amp; <span class="gradient-text">Real-World Community Tools</span>
+          </h1>
+
+          <p class="hero-lead text-muted">
+            Hi, I'm Paul. I build full-stack web applications, real-time tools, and transactional database systems. I earned my Doctor in Information Technology (DIT) degree from the University of the Cordilleras and currently teach IT at Pangasinan State University — with a strong passion for writing clean, practical code.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#projects" class="btn btn-brand btn-glow">
+              <i class="bi bi-grid-fill me-2"></i>Explore Projects
+            </a>
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#resumeModal">
+              <i class="bi bi-file-earmark-person me-2"></i>View Resume (PDF)
+            </button>
+            <a href="#contact" class="btn btn-subtle">
+              <i class="bi bi-chat-left-text me-2"></i>Get in Touch
+            </a>
+          </div>
+
+          <!-- Bento Metrics -->
+          <div class="row g-3 hero-metrics mt-4">
+            <div class="col-6 col-sm-3">
+              <div class="metric-card">
+                <span class="metric-val">DIT</span>
+                <span class="metric-label">Univ. of the Cordilleras</span>
               </div>
             </div>
-            <div class="col-6 col-md-3 d-flex">
-              <div class="stat-card">
-                <span class="stat-number">3+</span>
-                <span class="stat-label">Web Systems</span>
+            <div class="col-6 col-sm-3">
+              <div class="metric-card">
+                <span class="metric-val">3+</span>
+                <span class="metric-label">Live Systems Built</span>
               </div>
             </div>
-            <div class="col-6 col-md-3 d-flex">
-              <div class="stat-card">
-                <span class="stat-number">AI & IS</span>
-                <span class="stat-label">Research Focus</span>
+            <div class="col-6 col-sm-3">
+              <div class="metric-card">
+                <span class="metric-val">Full-Stack</span>
+                <span class="metric-label">PHP, MySQL &amp; Vanilla JS</span>
               </div>
             </div>
-            <div class="col-6 col-md-3 d-flex">
-              <div class="stat-card">
-                <span class="stat-number">Full-Stack</span>
-                <span class="stat-label">Web & PWA</span>
+            <div class="col-6 col-sm-3">
+              <div class="metric-card">
+                <span class="metric-val">Real-Time</span>
+                <span class="metric-label">PWAs &amp; Speech APIs</span>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 text-center mt-4 mt-lg-0 d-flex flex-column align-items-center justify-content-center">
+          <div class="profile-container">
+            <div class="profile-glow"></div>
+            <div class="profile-frame">
+              <img src="assets/img/profile.jpg" alt="Paul Nigel S. Abalos, DIT" class="profile-photo">
+            </div>
+            <div class="profile-card-badge">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-code-slash text-brand fs-5"></i>
+                <div class="text-start">
+                  <div class="profile-badge-title">Paul Nigel S. Abalos, DIT</div>
+                  <small class="text-dim">Full-Stack Dev &bull; IT Faculty</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-quick-meta d-flex flex-wrap justify-content-center gap-2">
+            <span class="meta-pill"><i class="bi bi-geo-alt text-brand me-1"></i>Pangasinan, PH</span>
+            <span class="meta-pill"><i class="bi bi-mortarboard text-brand me-1"></i>DIT, UC Baguio</span>
+            <span class="meta-pill"><i class="bi bi-shield-check text-brand me-1"></i>Production Tested</span>
           </div>
         </div>
       </div>
@@ -136,89 +196,177 @@
   </header>
 
   <main>
+    <!-- About Section -->
     <section id="about" class="section-padding">
       <div class="container">
-        <div class="row g-5 align-items-center reveal">
+        <div class="row g-4 g-lg-5 align-items-center">
           <div class="col-lg-5">
-            <p class="section-kicker">About</p>
-            <h2 class="section-title">Technology with academic purpose and real-world impact.</h2>
+            <div class="section-kicker">Background &amp; Approach</div>
+            <h2 class="section-title">Grounded in Computer Science, Driven by Practical Building.</h2>
+            <p class="text-body-bright mt-3">
+              I am an Assistant Professor in Information Technology at Pangasinan State University – San Carlos Campus, and earned my Doctor in Information Technology (DIT) degree from the University of the Cordilleras.
+            </p>
+            <p class="text-body-bright">
+              While I enjoy teaching and research in AI and data analytics, my true passion has always been building working software. I like taking ideas from scratch and turning them into fast, reliable web applications that solve tangible problems for family, communities, and real users.
+            </p>
+            <div class="d-flex gap-3 mt-4">
+              <a href="https://orcid.org/0000-0003-1866-9274" target="_blank" rel="noopener" class="btn btn-sm btn-subtle">
+                <i class="bi bi-journal-text me-2 text-brand"></i>ORCID Profile
+              </a>
+              <a href="https://www.linkedin.com/in/paulnigelabalos/" target="_blank" rel="noopener" class="btn btn-sm btn-subtle">
+                <i class="bi bi-linkedin me-2 text-brand"></i>LinkedIn
+              </a>
+            </div>
           </div>
+
           <div class="col-lg-7">
-            <p>I am an Assistant Professor in Information Technology at Pangasinan State University – San Carlos Campus, where I teach, conduct research, and develop technology solutions that bridge academia and industry. My work centers on artificial intelligence, data analytics, information systems, web development, and educational technology.</p>
-            <p>As both an educator and developer, I design and build web-based information systems, decision-support tools, and data-driven applications that improve organizational processes, support digital transformation, and enhance learning experiences.</p>
-            <p class="mb-0">I welcome opportunities for research collaboration, academic partnerships, technology projects, and professional networking.</p>
+            <div class="row g-3 g-lg-4">
+              <div class="col-sm-6">
+                <div class="value-card">
+                  <div class="value-icon"><i class="bi bi-shield-lock-fill"></i></div>
+                  <h4 class="value-title">Data &amp; Financial Integrity</h4>
+                  <p class="value-desc">Focusing on solid database design, strict row-level locking (InnoDB <code>FOR UPDATE</code>), transaction safety, and double-entry balance ledgers.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="value-card">
+                  <div class="value-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+                  <h4 class="value-title">Real-Time Web &amp; PWAs</h4>
+                  <p class="value-desc">Integrating practical hardware features like Web Speech API voice announcers for sports courts, mobile camera QR scanning, and silent notification beepers.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="value-card">
+                  <div class="value-icon"><i class="bi bi-people-fill"></i></div>
+                  <h4 class="value-title">Community &amp; Real Initiatives</h4>
+                  <p class="value-desc">Building software out of personal initiative to help communities — providing free alternatives to expensive subscription apps for local clubs and drivers.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="value-card">
+                  <div class="value-icon"><i class="bi bi-check2-circle"></i></div>
+                  <h4 class="value-title">Testing &amp; Code Quality</h4>
+                  <p class="value-desc">Using modern automated testing workflows like Playwright and Axe-Core to verify end-to-end checkout flows and ensure web accessibility.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="section-padding dark-section">
       <div class="container">
-        <div class="text-center mb-5">
-          <p class="section-kicker">Featured Projects</p>
-          <h2 class="section-title">Web systems I have built</h2>
-          <p class="section-subtitle mx-auto">A focused showcase of practical, responsive, and user-centered web development projects.</p>
+        <div class="text-center max-w-700 mx-auto mb-4 pb-1">
+          <div class="section-kicker">Featured Work</div>
+          <h2 class="section-title">Systems I Have Built</h2>
+          <p class="section-subtitle">
+            A look at three practical platforms built for family, sports clubs, and independent community initiatives.
+          </p>
         </div>
+
         <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <article class="project-card h-100 reveal">
-              <div class="project-visual restaurant-visual">
-                <i class="bi bi-cup-hot"></i>
-              </div>
-              <div class="project-body">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <span class="project-badge mb-0">Restaurant Website</span>
-                  <span class="status-indicator"><span class="status-dot"></span> Live</span>
-                </div>
-                <h3>La Mesa</h3>
-                <p>A professional restaurant website designed to present food offerings, brand identity, customer information, and online engagement through a clean and responsive interface.</p>
-                <div class="tech-stack">
-                  <span>HTML</span><span>CSS</span><span>Vanilla JS</span><span>AJAX</span><span>Bootstrap</span><span>PHP</span><span>MySQL</span><span>Responsive Web Design</span>
-                </div>
-                <div class="project-actions mt-4">
-                  <a href="https://lamesa.unaux.com" target="_blank" rel="noopener" class="btn btn-outline-info"><i class="bi bi-box-arrow-up-right me-2"></i>Visit Website</a>
+          <!-- Project 1: PickleDink -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <article class="project-bento-card w-100">
+              <div class="project-preview-wrap">
+                <img src="assets/img/projects/pickledink.jpg" alt="PickleDink Queue Management System" class="project-preview-img">
+                <div class="project-overlay">
+                  <span class="badge-status"><span class="status-dot"></span> Live in Production</span>
                 </div>
               </div>
-            </article>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <article class="project-card h-100 reveal">
-              <div class="project-visual chauffeur-visual">
-                <i class="bi bi-car-front"></i>
-              </div>
-              <div class="project-body">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <span class="project-badge mb-0">Web & Mobile System</span>
-                  <span class="status-indicator"><span class="status-dot"></span> Live</span>
+              <div class="project-bento-body">
+                <div class="project-category">Sports Community PWA</div>
+                <h3 class="project-bento-title">PickleDink</h3>
+                <p class="project-bento-desc">
+                  A real-time court queue and analytics system built for a club of competitive and professional pickleball players, offering a free alternative to commercial paid apps.
+                </p>
+                <div class="key-feats">
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> Dynamic Elo Rating Leaderboards</div>
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> Big-Screen TV Announcer Mode (TTS)</div>
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> VIP "Beeper" Targeted Silent Push Alerts</div>
                 </div>
-                <h3>SakayPH</h3>
-                <p>A web-based service system concept for managing SakayPH bookings, customer requests, service details, and administrative workflows for a professional transportation service.</p>
-                <div class="tech-stack">
-                  <span>HTML</span><span>CSS</span><span>Vanilla JS</span><span>AJAX</span><span>Bootstrap</span><span>PHP</span><span>MySQL</span><span>Responsive Web Design</span><span>OpenStreetMap</span><span>Leaflet</span><span>OCR.space</span><span>Brevo API</span>
+                <div class="tech-tags">
+                  <span>PHP</span><span>MySQL</span><span>PWA</span><span>Web Speech API</span><span>jsQR</span><span>Vanilla JS</span>
                 </div>
-                <div class="project-actions mt-4">
-                  <a href="https://sakayph.unaux.com" target="_blank" rel="noopener" class="btn btn-outline-info"><i class="bi bi-chat-left-text me-2"></i>Visit Website</a>
+                <div class="project-bento-footer mt-auto pt-3 d-flex gap-2">
+                  <button type="button" class="btn btn-sm btn-brand flex-grow-1" data-bs-toggle="modal" data-bs-target="#modalPickleDink">
+                    <i class="bi bi-code-square me-1"></i>Project Details
+                  </button>
+                  <a href="https://pickledink.unaux.com" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light" title="Visit Live Platform">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
                 </div>
               </div>
             </article>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <article class="project-card h-100 reveal">
-              <div class="project-visual pickledink-visual">
-                <i class="bi bi-trophy"></i>
+
+          <!-- Project 2: SakayPH -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <article class="project-bento-card w-100">
+              <div class="project-preview-wrap">
+                <img src="assets/img/projects/sakayph.png" alt="SakayPH Carpool & Chauffeur Platform" class="project-preview-img">
+                <div class="project-overlay">
+                  <span class="badge-status"><span class="status-dot"></span> Live in Production</span>
+                </div>
               </div>
-              <div class="project-body">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <span class="project-badge mb-0">Sports Queue & Analytics PWA</span>
-                  <span class="status-indicator"><span class="status-dot"></span> Live</span>
+              <div class="project-bento-body">
+                <div class="project-category">Fintech &amp; Escrow Platform</div>
+                <h3 class="project-bento-title">SakayPH</h3>
+                <p class="project-bento-desc">
+                  A peer-to-peer carpool and driver platform built as an initiative to help local drivers and commuters with secure escrow payments, anti-fraud controls, and OCR verification.
+                </p>
+                <div class="key-feats">
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> 24-Hour Automated Escrow Release Engine</div>
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> Zero Double-Spend (InnoDB Row Locking)</div>
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> OCR Driver License &amp; OR/CR Document Scanner</div>
                 </div>
-                <h3>PickleDink</h3>
-                <p>A real-time queue management and analytics system for pickleball clubs featuring automated match rotation, dynamic Elo rating leaderboards, QR self check-in, TV announcer mode with TTS, and targeted push notifications.</p>
-                <div class="tech-stack">
-                  <span>HTML</span><span>CSS</span><span>Vanilla JS</span><span>AJAX</span><span>Bootstrap</span><span>PHP</span><span>MySQL</span><span>PWA</span><span>Web Speech API</span><span>jsQR</span><span>Responsive Web Design</span>
+                <div class="tech-tags">
+                  <span>PHP (PDO)</span><span>MySQL InnoDB</span><span>PayMongo API</span><span>OCR.space</span><span>Brevo API</span><span>Leaflet</span>
                 </div>
-                <div class="project-actions mt-4">
-                  <a href="https://pickledink.unaux.com" target="_blank" rel="noopener" class="btn btn-outline-info"><i class="bi bi-box-arrow-up-right me-2"></i>Visit Website</a>
+                <div class="project-bento-footer mt-auto pt-3 d-flex gap-2">
+                  <button type="button" class="btn btn-sm btn-brand flex-grow-1" data-bs-toggle="modal" data-bs-target="#modalSakayPH">
+                    <i class="bi bi-code-square me-1"></i>Project Details
+                  </button>
+                  <a href="https://sakayph.unaux.com" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light" title="Visit Live Platform">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 3: La Mesa -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <article class="project-bento-card w-100">
+              <div class="project-preview-wrap">
+                <img src="assets/img/projects/lamesa.png" alt="La Mesa Restaurant Platform" class="project-preview-img">
+                <div class="project-overlay">
+                  <span class="badge-status"><span class="status-dot"></span> Live in Production</span>
+                </div>
+              </div>
+              <div class="project-bento-body">
+                <div class="project-category">Restaurant Logistics System</div>
+                <h3 class="project-bento-title">La Mesa</h3>
+                <p class="project-bento-desc">
+                  A custom food ordering and delivery system engineered for my sister's restaurant business in Guernsey, Channel Islands (UK), with multi-role portals and local parish zoning.
+                </p>
+                <div class="key-feats">
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> 4 Portals (Super Admin, Owner, Rider, Customer)</div>
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> Guernsey GY Postcode &amp; Parish Auto-Sync</div>
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> Playwright + Axe-Core Automated Testing</div>
+                </div>
+                <div class="tech-tags">
+                  <span>PHP</span><span>MySQL</span><span>AJAX</span><span>Bootstrap 5</span><span>Playwright</span><span>Axe-Core</span><span>Revolut Pay</span>
+                </div>
+                <div class="project-bento-footer mt-auto pt-3 d-flex gap-2">
+                  <button type="button" class="btn btn-sm btn-brand flex-grow-1" data-bs-toggle="modal" data-bs-target="#modalLaMesa">
+                    <i class="bi bi-code-square me-1"></i>Project Details
+                  </button>
+                  <a href="https://lamesa.unaux.com" target="_blank" rel="noopener" class="btn btn-sm btn-outline-light" title="Visit Live Platform">
+                    <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
                 </div>
               </div>
             </article>
@@ -227,114 +375,494 @@
       </div>
     </section>
 
-    <section id="research" class="section-padding">
+    <!-- Skills & Tech Section -->
+    <section id="skills" class="section-padding">
       <div class="container">
-        <div class="row g-4 align-items-stretch">
-          <div class="col-lg-6">
-            <div class="glass-card h-100 reveal">
-              <p class="section-kicker">Research</p>
-              <h2 class="section-title">AI, data analytics, and information systems research.</h2>
-              <p>My research interests include artificial intelligence, machine learning, recommendation systems, HR analytics, bibliometric analysis, educational technology, and data-driven decision-making.</p>
-              <a href="https://orcid.org/0000-0003-1866-9274" target="_blank" rel="noopener" class="btn btn-primary mt-3"><i class="bi bi-person-badge me-2"></i>View ORCID Profile</a>
+        <div class="text-center max-w-700 mx-auto mb-4 pb-1">
+          <div class="section-kicker">Core Toolset</div>
+          <h2 class="section-title">Skills &amp; Technical Capabilities</h2>
+          <p class="section-subtitle">
+            Technologies and practices I use to build dependable, maintainable software.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 d-flex">
+            <div class="skill-group-card w-100">
+              <div class="skill-icon-header">
+                <i class="bi bi-hdd-network-fill"></i>
+                <h4>Backend &amp; Database</h4>
+              </div>
+              <ul class="skill-list">
+                <li><strong>PHP 8+ &amp; PDO</strong> (Prepared architecture)</li>
+                <li><strong>MySQL / MariaDB</strong> (InnoDB relational design)</li>
+                <li><strong>Concurrency Control</strong> (<code>SELECT ... FOR UPDATE</code>)</li>
+                <li><strong>Escrow &amp; Double-Entry Ledgers</strong></li>
+                <li><strong>RESTful API Design &amp; Webhooks</strong></li>
+                <li><strong>CSRF Protection &amp; Session Hardening</strong></li>
+              </ul>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="timeline h-100 reveal">
-              <div class="timeline-item">
-                <span>AI & Analytics</span>
-                <p>Intelligent systems, recommendation models, and data-driven applications.</p>
+
+          <div class="col-lg-3 col-md-6 d-flex">
+            <div class="skill-group-card w-100">
+              <div class="skill-icon-header">
+                <i class="bi bi-window-fullscreen"></i>
+                <h4>Frontend &amp; Mobile Web</h4>
               </div>
-              <div class="timeline-item">
-                <span>Educational Technology</span>
-                <p>Technology-enabled learning, smart education, and digital transformation.</p>
+              <ul class="skill-list">
+                <li><strong>Modern JavaScript</strong> (ES6+, Vanilla JS, AJAX)</li>
+                <li><strong>Progressive Web Apps</strong> (PWA &amp; Service Workers)</li>
+                <li><strong>Web Speech API</strong> (Text-to-Speech synthesis)</li>
+                <li><strong>Camera QR Scanning</strong> (jsQR library)</li>
+                <li><strong>Bootstrap 5 &amp; Modern CSS</strong></li>
+                <li><strong>Responsive Mobile-First UI/UX</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex">
+            <div class="skill-group-card w-100">
+              <div class="skill-icon-header">
+                <i class="bi bi-gear-wide-connected"></i>
+                <h4>Integrations &amp; Testing</h4>
               </div>
-              <div class="timeline-item">
-                <span>Information Systems</span>
-                <p>Applied systems development for organizational and academic contexts.</p>
+              <ul class="skill-list">
+                <li><strong>PayMongo API</strong> (Cards, GCash, Payouts)</li>
+                <li><strong>OCR.space API</strong> (Document text parsing)</li>
+                <li><strong>Brevo API</strong> (Transactional emails)</li>
+                <li><strong>Playwright</strong> (Automated E2E testing)</li>
+                <li><strong>Axe-Core</strong> (Accessibility verification)</li>
+                <li><strong>Leaflet &amp; OpenStreetMap</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex">
+            <div class="skill-group-card w-100">
+              <div class="skill-icon-header">
+                <i class="bi bi-cpu-fill"></i>
+                <h4>Academic &amp; Research</h4>
               </div>
-              <div class="timeline-item">
-                <span>Research Visibility</span>
-                <p>Complete publication details are maintained through ORCID.</p>
-              </div>
+              <ul class="skill-list">
+                <li><strong>Doctor in IT (DIT)</strong> &bull; Univ. of the Cordilleras</li>
+                <li><strong>Artificial Intelligence</strong> &amp; ML Models</li>
+                <li><strong>Data &amp; HR Analytics</strong></li>
+                <li><strong>Bibliometric Analysis</strong></li>
+                <li><strong>Algorithmic Queue Design</strong> (Elo rating)</li>
+                <li><strong>Educational Technology Systems</strong></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section-padding dark-section">
+    <!-- Research & Publications Section -->
+    <section id="research" class="section-padding dark-section">
       <div class="container">
-        <div class="text-center mb-5">
-          <p class="section-kicker">Core Skills</p>
-          <h2 class="section-title">Academic, technical, and research strengths</h2>
-        </div>
-        <div class="row g-4 reveal">
-          <div class="col-md-4">
-            <h4 class="text-center mb-4 text-info" style="font-family: 'Outfit', sans-serif; font-weight: 700;">Development & IT</h4>
-            <div class="skills-cloud">
-              <span>Full-Stack Web Dev</span><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Bootstrap</span><span>HTML5</span><span>CSS3</span><span>PWA</span><span>Information Systems</span><span>Networking</span>
+        <div class="row g-4 g-lg-5 align-items-center">
+          <div class="col-lg-6">
+            <div class="section-kicker">Research &amp; Publications</div>
+            <h2 class="section-title">Academic Background &amp; Research Work</h2>
+            <p class="text-body-bright mt-3">
+              As an Assistant Professor at Pangasinan State University, my research work touches on Artificial Intelligence, recommendation models, data analytics, and digital learning transformation.
+            </p>
+            <p class="text-body-bright">
+              Having academic research experience instills a healthy habit of structured thinking, deep problem breakdown, and data integrity that carries directly into my software development work.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="https://orcid.org/0000-0003-1866-9274" target="_blank" rel="noopener" class="btn btn-brand">
+                <i class="bi bi-journal-check me-2"></i>View ORCID Profile
+              </a>
+              <a href="#contact" class="btn btn-outline-light">
+                <i class="bi bi-chat-quote me-2"></i>Get in Touch
+              </a>
             </div>
           </div>
-          <div class="col-md-4">
-            <h4 class="text-center mb-4 text-info" style="font-family: 'Outfit', sans-serif; font-weight: 700;">Data & AI</h4>
-            <div class="skills-cloud">
-              <span>Artificial Intelligence</span><span>Machine Learning</span><span>Data Analytics</span><span>HR Analytics</span><span>Bibliometrics</span>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <h4 class="text-center mb-4 text-info" style="font-family: 'Outfit', sans-serif; font-weight: 700;">Academic</h4>
-            <div class="skills-cloud">
-              <span>Educational Tech</span><span>Digital Transformation</span><span>Research</span><span>Teaching</span>
+
+          <div class="col-lg-6">
+            <div class="research-timeline">
+              <div class="research-item">
+                <div class="research-icon"><i class="bi bi-cpu"></i></div>
+                <div class="research-content">
+                  <h5>Applied AI &amp; Machine Learning</h5>
+                  <p class="text-muted-bright mb-0">Exploring recommendation models, automated classification, and applied machine learning tools.</p>
+                </div>
+              </div>
+              <div class="research-item">
+                <div class="research-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                <div class="research-content">
+                  <h5>Data Analytics &amp; Bibliometrics</h5>
+                  <p class="text-muted-bright mb-0">Analyzing research trends, HR data metrics, and institutional information systems.</p>
+                </div>
+              </div>
+              <div class="research-item">
+                <div class="research-icon"><i class="bi bi-mortarboard"></i></div>
+                <div class="research-content">
+                  <h5>Smart Education &amp; Learning Systems</h5>
+                  <p class="text-muted-bright mb-0">Designing user-friendly educational technology tools to support modern campus workflows.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="section-padding">
       <div class="container">
-        <div class="text-center mb-5">
-          <p class="section-kicker">Contact</p>
-          <h2 class="section-title">Let’s connect</h2>
-          <p class="section-subtitle mx-auto">For research collaboration, academic partnerships, technology projects, or professional networking.</p>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-3 reveal">
-            <a class="contact-card" id="emailContactCard" href="javascript:void(0)" role="button" title="Click to copy email address">
-              <i class="bi bi-envelope-at" id="emailIcon"></i>
-              <strong>Email</strong>
-              <span id="emailText">paulnigelabalos@gmail.com</span>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-3 reveal">
-            <a class="contact-card" href="https://www.linkedin.com/in/paulnigelabalos/" target="_blank" rel="noopener">
-              <i class="bi bi-linkedin"></i>
-              <strong>LinkedIn</strong>
-              <span>Profile</span>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-3 reveal">
-            <a class="contact-card" href="https://www.facebook.com/leginluap" target="_blank" rel="noopener">
-              <i class="bi bi-facebook"></i>
-              <strong>Facebook</strong>
-              <span>Profile</span>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-3 reveal">
-            <a class="contact-card" href="https://orcid.org/0000-0003-1866-9274" target="_blank" rel="noopener">
-              <i class="bi bi-journal-richtext"></i>
-              <strong>ORCID</strong>
-              <span>Profile</span>
-            </a>
+        <div class="contact-cta-card text-center">
+          <div class="section-kicker">Let's Connect</div>
+          <h2 class="section-title text-white">Have a Project in Mind or Want to Collaborate?</h2>
+          <p class="section-subtitle mx-auto text-muted-bright mb-4">
+            Whether you are looking for a full-stack developer to help build a web application, or interested in collaborating on tech initiatives — feel free to reach out.
+          </p>
+
+          <div class="row g-3 justify-content-center">
+            <div class="col-lg-4 col-md-4 col-12 d-flex">
+              <div class="contact-action-box w-100" id="emailContactCard" role="button" title="Click to copy email address">
+                <i class="bi bi-envelope-at-fill contact-icon" id="emailIcon"></i>
+                <div class="contact-meta">
+                  <span class="contact-sub">Email (Click to Copy)</span>
+                  <span class="contact-main" id="emailText">paulnigelabalos@gmail.com</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12 d-flex">
+              <a href="https://www.linkedin.com/in/paulnigelabalos/" target="_blank" rel="noopener" class="contact-action-box w-100">
+                <i class="bi bi-linkedin contact-icon"></i>
+                <div class="contact-meta">
+                  <span class="contact-sub">Professional Network</span>
+                  <span class="contact-main">LinkedIn Profile</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12 d-flex">
+              <a href="https://orcid.org/0000-0003-1866-9274" target="_blank" rel="noopener" class="contact-action-box w-100">
+                <i class="bi bi-journal-richtext contact-icon"></i>
+                <div class="contact-meta">
+                  <span class="contact-sub">Academic Record</span>
+                  <span class="contact-main">ORCID Profile</span>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Back to Top Button -->
   <button id="backToTop" class="back-to-top" aria-label="Back to top">
     <i class="bi bi-chevron-up"></i>
   </button>
+
+  <!-- ========================================================================= -->
+  <!-- PROJECT DETAILS MODALS                                                    -->
+  <!-- ========================================================================= -->
+
+  <!-- Modal 1: PickleDink Details -->
+  <div class="modal fade case-study-modal" id="modalPickleDink" tabindex="-1" aria-labelledby="modalPickleDinkLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0">
+          <div class="d-flex align-items-center gap-2">
+            <span class="badge-tech-pill success"><i class="bi bi-trophy-fill"></i> Sports Community PWA</span>
+            <span class="badge-tech-pill"><i class="bi bi-phone"></i> Progressive Web App</span>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body pt-3 pb-4">
+          <div class="case-study-hero">
+            <img src="assets/img/projects/pickledink.jpg" alt="PickleDink Hero" class="case-study-banner">
+            <div class="case-study-title-wrap">
+              <h2 class="modal-title h4 fw-bold" id="modalPickleDinkLabel">PickleDink: Real-Time Court Queue &amp; Elo Rating Engine</h2>
+              <p class="case-hero-desc mb-0">Built for a club of competitive and professional pickleball players looking for a free, smooth queue and rating system without costly subscription fees.</p>
+            </div>
+          </div>
+
+          <div class="row g-4 mt-2">
+            <div class="col-lg-8">
+              <div class="case-block">
+                <h4 class="case-heading"><i class="bi bi-info-circle text-brand me-2"></i> Why I Built It</h4>
+                <p>
+                  Most existing court management apps come with monthly subscription tiers and paid version locks. For our local club of competitive and professional pickleball players, physical whiteboard lists and paddle stacks were causing long arguments, while paid software wasn't practical. I built PickleDink to give our community a 100% free, automated kiosk that handles court rotations fairly.
+                </p>
+              </div>
+
+              <div class="case-block mt-4">
+                <h4 class="case-heading"><i class="bi bi-cpu text-brand me-2"></i> Key Features &amp; Architecture</h4>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="arch-box">
+                      <h6>Automated Rotation Algorithm</h6>
+                      <p>Balances match queueing across doubles and singles, ensuring players get equal court time and minimizing wait times between rounds.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="arch-box">
+                      <h6>Dynamic Elo Rating Engine</h6>
+                      <p>Calculates rating changes based on match results and instantly refreshes global club leaderboards after every game.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="arch-box">
+                      <h6>TV / Announcer Mode (Text-to-Speech)</h6>
+                      <p>A full-screen court display that utilizes the browser's Web Speech API to clearly announce called matches out loud over court noise.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="arch-box">
+                      <h6>The "Beeper" Silent Push Notification</h6>
+                      <p>Players check in with a quick QR scan. Their phones stay quiet until their court is called, vibrating and chiming only when it is their turn to play.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="case-block mt-4">
+                <h4 class="case-heading"><i class="bi bi-shield-check text-success me-2"></i> Identity Safeguards</h4>
+                <p>
+                  Built-in duplicate name guards prevent accidental queue merges and require unique identifiers (like initials) so walk-in players never accidentally hijack someone else's spot.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="case-sidebar">
+                <div class="sidebar-block">
+                  <h6>Tech Stack</h6>
+                  <ul class="sidebar-list">
+                    <li><span>Format:</span> PWA / Single-Page Kiosk</li>
+                    <li><span>Backend:</span> PHP (REST endpoints)</li>
+                    <li><span>Database:</span> MySQL Normalized Schema</li>
+                    <li><span>Frontend:</span> Vanilla JavaScript, AJAX, Bootstrap</li>
+                    <li><span>Hardware APIs:</span> Web Speech API (TTS), jsQR</li>
+                    <li><span>Cost:</span> 100% Free for Community</li>
+                  </ul>
+                </div>
+
+                <div class="sidebar-block mt-3">
+                  <h6>Status</h6>
+                  <p class="sidebar-status-desc mb-0">Active and ready to use for club sessions.</p>
+                </div>
+
+                <div class="d-grid gap-2 mt-4">
+                  <a href="https://pickledink.unaux.com" target="_blank" rel="noopener" class="btn btn-brand">
+                    <i class="bi bi-box-arrow-up-right me-2"></i>Launch PickleDink
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: SakayPH Details -->
+  <div class="modal fade case-study-modal" id="modalSakayPH" tabindex="-1" aria-labelledby="modalSakayPHLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0">
+          <div class="d-flex align-items-center gap-2">
+            <span class="badge-tech-pill warning"><i class="bi bi-car-front-fill"></i> Community Initiative</span>
+            <span class="badge-tech-pill cyan"><i class="bi bi-shield-lock"></i> Escrow Engine</span>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body pt-3 pb-4">
+          <div class="case-study-hero">
+            <img src="assets/img/projects/sakayph.png" alt="SakayPH Hero" class="case-study-banner">
+            <div class="case-study-title-wrap">
+              <h2 class="modal-title h4 fw-bold" id="modalSakayPHLabel">SakayPH: Carpool &amp; Chauffeur Service Platform</h2>
+              <p class="case-hero-desc mb-0">Built as a personal initiative to help carpool groups and drivers with secure escrow payments, document verification, and fair ride matching.</p>
+            </div>
+          </div>
+
+          <div class="row g-4 mt-2">
+            <div class="col-lg-8">
+              <div class="case-block">
+                <h4 class="case-heading"><i class="bi bi-info-circle text-brand me-2"></i> The Motivation &amp; Story</h4>
+                <p>
+                  Big ride-hailing services often take high percentage cuts from drivers, while informal carpool Facebook groups often suffer from payment cancellations, no-shows, and safety concerns. I took the personal initiative to build SakayPH as a working solution to help drivers and passengers connect securely. While the target driver community did not end up adopting it, I am very proud of the engineering behind it — building bank-grade transaction locking, automated escrow, and automated document verification.
+                </p>
+              </div>
+
+              <div class="case-block mt-4">
+                <h4 class="case-heading"><i class="bi bi-cash-coin text-brand me-2"></i> Financial Integrity &amp; Technical Highlights</h4>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="arch-box">
+                      <h6>Automated 24h Escrow Lock</h6>
+                      <p>Passenger payments are placed in escrow and released to the driver's wallet 24 hours after trip completion to protect both parties from disputes and fraud.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="arch-box">
+                      <h6>Zero Double-Spend Protection</h6>
+                      <p>Implements strict MySQL InnoDB row-level locking (<code>SELECT ... FOR UPDATE</code>) on driver balance records to prevent concurrent balance exploitation.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="arch-box">
+                      <h6>Immutable Double-Entry Ledger</h6>
+                      <p>Every single transaction entering or leaving the platform is logged in an immutable ledger for auditability and reconciliation.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="arch-box">
+                      <h6>OCR Document Verification</h6>
+                      <p>Integrated with OCR.space API to scan and validate driver licenses and vehicle OR/CR documents during onboarding.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="case-block mt-4">
+                <h4 class="case-heading"><i class="bi bi-shield-lock text-brand me-2"></i> Security Architecture</h4>
+                <p>
+                  Built with 100% prepared PDO statements, anti-CSRF tokens on every action, and secure HTTP-only cookies to ensure comprehensive application security.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="case-sidebar">
+                <div class="sidebar-block">
+                  <h6>Tech Stack</h6>
+                  <ul class="sidebar-list">
+                    <li><span>Architecture:</span> PWA / Service Platform</li>
+                    <li><span>Backend:</span> PHP (100% Prepared PDO)</li>
+                    <li><span>Database:</span> MySQL InnoDB (ACID)</li>
+                    <li><span>Payments:</span> PayMongo API Integration</li>
+                    <li><span>Document OCR:</span> OCR.space API</li>
+                    <li><span>Email Service:</span> Brevo API</li>
+                    <li><span>Maps:</span> Leaflet &amp; OpenStreetMap</li>
+                  </ul>
+                </div>
+
+                <div class="sidebar-block mt-3">
+                  <h6>Status</h6>
+                  <p class="sidebar-status-desc mb-0">Fully functional platform and ready to explore.</p>
+                </div>
+
+                <div class="d-grid gap-2 mt-4">
+                  <a href="https://sakayph.unaux.com" target="_blank" rel="noopener" class="btn btn-brand">
+                    <i class="bi bi-box-arrow-up-right me-2"></i>Launch SakayPH
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: La Mesa Details -->
+  <div class="modal fade case-study-modal" id="modalLaMesa" tabindex="-1" aria-labelledby="modalLaMesaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0">
+          <div class="d-flex align-items-center gap-2">
+            <span class="badge-tech-pill cyan"><i class="bi bi-shop"></i> Family Business Platform</span>
+            <span class="badge-tech-pill"><i class="bi bi-diagram-3"></i> Multi-Role RBAC</span>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body pt-3 pb-4">
+          <div class="case-study-hero">
+            <img src="assets/img/projects/lamesa.png" alt="La Mesa Hero" class="case-study-banner">
+            <div class="case-study-title-wrap">
+              <h2 class="modal-title h4 fw-bold" id="modalLaMesaLabel">La Mesa: Restaurant &amp; Delivery Logistics System</h2>
+              <p class="case-hero-desc mb-0">A bespoke online ordering and delivery management system developed for my sister's restaurant business in Guernsey, Channel Islands (UK).</p>
+            </div>
+          </div>
+
+          <div class="row g-4 mt-2">
+            <div class="col-lg-8">
+              <div class="case-block">
+                <h4 class="case-heading"><i class="bi bi-info-circle text-brand me-2"></i> The Motivation &amp; Background</h4>
+                <p>
+                  Commercial delivery platforms take hefty commissions and don't natively support the unique geography of the Channel Islands (Guernsey's distinct parishes and GY1–GY8 postal codes). I built this platform specifically for my sister's restaurant in the UK to handle customer orders, kitchen tracking, delivery dispatch, and payments directly.
+                </p>
+              </div>
+
+              <div class="case-block mt-4">
+                <h4 class="case-heading"><i class="bi bi-boxes text-brand me-2"></i> Features &amp; Architecture</h4>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="arch-box">
+                      <h6>4-Sided Role Architecture</h6>
+                      <p>Separate portals for Super Admin, Store Owner (kitchen order pipeline), Delivery Rider (dispatch view at <code>/rider</code>), and Customers.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="arch-box">
+                      <h6>Guernsey Postcode Validation</h6>
+                      <p>Bidirectional sync that checks Guernsey GY postcodes against the island's 10 parishes to accurately calculate delivery coverage.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="arch-box">
+                      <h6>Real-Time Cart &amp; Milestone Engine</h6>
+                      <p>Zero-reload AJAX cart updates with live progress meters for free delivery thresholds (£25) and instant delivery vs pickup fee calculations.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="arch-box">
+                      <h6>Automated E2E Testing Suite</h6>
+                      <p>Includes Playwright end-to-end test scripts and Axe-Core accessibility audits to verify cart arithmetic and checkout stability.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="case-block mt-4">
+                <h4 class="case-heading"><i class="bi bi-qr-code text-brand me-2"></i> Payment Confirmation Hub</h4>
+                <p>
+                  Includes 1-tap copy tools, Revolut Pay links, QR payments, and screenshot proof uploads with atomic order tracking numbers (<code>FDC-YYYYMMDD-XXXX</code>).
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="case-sidebar">
+                <div class="sidebar-block">
+                  <h6>Tech Stack</h6>
+                  <ul class="sidebar-list">
+                    <li><span>Architecture:</span> Multi-Role Web Platform</li>
+                    <li><span>Backend:</span> PHP (MVC-inspired layout)</li>
+                    <li><span>Database:</span> MySQL <code>lamesa_db</code></li>
+                    <li><span>Testing:</span> Playwright + Axe-Core</li>
+                    <li><span>Payments:</span> Revolut Pay &amp; QR Hub</li>
+                    <li><span>Geography:</span> Channel Islands GY Sync</li>
+                  </ul>
+                </div>
+
+                <div class="sidebar-block mt-3">
+                  <h6>Status</h6>
+                  <p class="sidebar-status-desc mb-0">Active in production with ongoing feature enhancements.</p>
+                </div>
+
+                <div class="d-grid gap-2 mt-4">
+                  <a href="https://lamesa.unaux.com" target="_blank" rel="noopener" class="btn btn-brand">
+                    <i class="bi bi-box-arrow-up-right me-2"></i>Launch La Mesa
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Resume Preview Modal -->
   <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
@@ -342,33 +870,40 @@
       <div class="modal-content resume-modal-content">
         <div class="modal-header border-secondary border-opacity-25 px-4 py-3">
           <div class="d-flex align-items-center gap-2">
-            <i class="bi bi-file-earmark-person text-info fs-4"></i>
+            <i class="bi bi-file-earmark-person text-brand fs-4"></i>
             <div>
               <h5 class="modal-title mb-0 fw-bold" id="resumeModalLabel">Curriculum Vitae / Resume</h5>
-              <small class="text-muted">Dr. Paul Nigel S. Abalos, DIT</small>
+              <small class="text-dim">Paul Nigel S. Abalos, DIT</small>
             </div>
           </div>
           <div class="d-flex gap-2 ms-auto align-items-center">
-            <a href="assets/docs/resume.pdf" target="_blank" rel="noopener" class="btn btn-sm btn-outline-info d-none d-sm-inline-flex align-items-center" title="Open in new tab"><i class="bi bi-box-arrow-up-right me-1"></i>New Tab</a>
-            <a href="assets/docs/resume.pdf" download="Paul_Nigel_Abalos_Resume.pdf" class="btn btn-sm btn-primary d-inline-flex align-items-center" title="Download Resume"><i class="bi bi-download me-1"></i>Download PDF</a>
+            <a href="assets/docs/resume.pdf" target="_blank" rel="noopener" class="btn btn-sm btn-outline-brand d-none d-sm-inline-flex align-items-center" title="Open in new tab">
+              <i class="bi bi-box-arrow-up-right me-1"></i>New Tab
+            </a>
+            <a href="assets/docs/resume.pdf" download="Paul_Nigel_Abalos_Resume.pdf" class="btn btn-sm btn-brand d-inline-flex align-items-center" title="Download Resume">
+              <i class="bi bi-download me-1"></i>Download PDF
+            </a>
             <button type="button" class="btn-close btn-close-white ms-2" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
         </div>
-        <div class="modal-body p-0 resume-modal-body">
-          <iframe src="assets/docs/resume.pdf#toolbar=1&navpanes=0" class="w-100 h-100" style="min-height: 75vh; border: none;" title="Resume Preview"></iframe>
+        <div class="modal-body p-0 resume-modal-body" id="resumeModalBody" style="height: 80vh; min-height: 550px;">
+          <!-- PDF frame is injected dynamically on modal open to eliminate file:/// origin recursion -->
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Footer -->
   <footer class="footer py-4">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
-      <p class="mb-0">© 2026 Paul Nigel S. Abalos, DIT</p>
-      <p class="mb-0">Designed and developed by Paul Nigel S. Abalos</p>
+      <p class="mb-0 text-dim small">&copy; 2026 Paul Nigel S. Abalos, DIT &bull; All Rights Reserved.</p>
+      <p class="mb-0 text-dim small">Built with precision &bull; <a href="#home" class="text-brand">Back to top</a></p>
     </div>
   </footer>
 
+  <!-- Bootstrap 5 Bundle JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
   <script src="assets/js/main.js"></script>
 </body>
 </html>
