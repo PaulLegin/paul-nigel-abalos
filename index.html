@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="Portfolio of Paul Nigel S. Abalos, DIT — Full-Stack Web Developer and Assistant Professor in Information Technology. Builder of real-time sports PWAs, custom logistics, and community web systems.">
+  <meta name="description" content="Portfolio of Paul Nigel S. Abalos, DIT — Full-Stack Web Developer, IT Educator, and Researcher. Builder of real-time sports PWAs, custom logistics, and community web systems.">
   <meta name="keywords" content="Paul Nigel S. Abalos, DIT, Full-Stack Developer, Web Developer, PHP, MySQL, JavaScript, PWA, University of the Cordilleras, Pangasinan State University">
   <meta name="author" content="Paul Nigel S. Abalos, DIT">
 
@@ -44,13 +44,31 @@
     "@type": "Person",
     "name": "Paul Nigel S. Abalos",
     "honorificSuffix": "DIT",
-    "jobTitle": "Full-Stack Developer & Assistant Professor in Information Technology",
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "University of the Cordilleras"
-    },
+    "jobTitle": "Full-Stack Developer | IT Educator | Researcher",
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "University of the Cordilleras",
+        "award": "Doctor of Information Technology (DIT)",
+        "endDate": "2026-04-30"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "Colegio de Dagupan",
+        "award": "Master of Information Technology",
+        "startDate": "2016",
+        "endDate": "2019"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "Colegio de Dagupan",
+        "award": "Bachelor of Science in Information Technology",
+        "startDate": "2012",
+        "endDate": "2016"
+      }
+    ],
     "worksFor": {
-      "@type": "CollegeOrUniversity",
+      "@type": "EducationalOrganization",
       "name": "Pangasinan State University – San Carlos Campus"
     },
     "url": "https://paullegin.github.io/paul-nigel-abalos/",
@@ -95,13 +113,6 @@
         </div>
       </a>
 
-      <!-- Availability Pill -->
-      <div class="d-none d-xl-flex align-items-center ms-3">
-        <span class="availability-pill">
-          <span class="pulse-dot"></span> Open for Remote Projects &amp; Collaboration
-        </span>
-      </div>
-
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -109,9 +120,11 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto align-items-lg-center">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills &amp; Tech</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
             <button type="button" class="btn btn-sm btn-outline-brand" data-bs-toggle="modal" data-bs-target="#resumeModal">
@@ -132,29 +145,34 @@
           <div class="hero-badge">
             <span class="hero-badge-tag"><i class="bi bi-terminal me-1"></i> Full-Stack Developer</span>
             <span class="hero-badge-divider"></span>
-            <span class="hero-badge-text">IT Educator</span>
-            <span class="hero-badge-divider"></span>
-            <span class="hero-badge-text">Researcher</span>
+            <span class="hero-badge-group">
+              <span class="hero-badge-text">IT Educator</span>
+              <span class="hero-badge-divider"></span>
+              <span class="hero-badge-text">Researcher</span>
+            </span>
           </div>
 
           <h1 class="hero-title display-4 fw-bold">
-            Building Practical Web Systems &amp; <span class="gradient-text">Real-World Community Tools</span>
+            Building Practical Digital Solutions &amp; <span class="gradient-text">Empowering Through Technology</span>
           </h1>
 
           <p class="hero-lead text-muted">
-            Hi, I'm Paul. I build full-stack web applications, real-time tools, and transactional database systems. I earned my Doctor in Information Technology (DIT) degree from the University of the Cordilleras and currently teach IT at Pangasinan State University — with a strong passion for writing clean, practical code.
+            Building practical digital solutions, advancing knowledge through research, and empowering people through technology and education. I develop full-stack web systems, teach Information Technology at Pangasinan State University, and conduct applied research in AI, data analytics, and educational technology.
           </p>
 
           <!-- Action Buttons -->
           <div class="d-flex flex-wrap gap-3 mt-4">
             <a href="#projects" class="btn btn-brand btn-glow">
-              <i class="bi bi-grid-fill me-2"></i>Explore Projects
+              <i class="bi bi-grid-fill me-2"></i>View Projects
+            </a>
+            <a href="#research" class="btn btn-outline-brand">
+              <i class="bi bi-journal-text me-2"></i>View Research
             </a>
             <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#resumeModal">
-              <i class="bi bi-file-earmark-person me-2"></i>View Resume (PDF)
+              <i class="bi bi-file-earmark-person me-2"></i>View Resume
             </button>
             <a href="#contact" class="btn btn-subtle">
-              <i class="bi bi-chat-left-text me-2"></i>Get in Touch
+              <i class="bi bi-chat-left-text me-2"></i>Contact Me
             </a>
           </div>
 
@@ -163,13 +181,13 @@
             <div class="col-6 col-sm-3">
               <div class="metric-card">
                 <span class="metric-val">DIT</span>
-                <span class="metric-label">Univ. of the Cordilleras</span>
+                <span class="metric-label">UC Baguio &bull; Apr 2026</span>
               </div>
             </div>
             <div class="col-6 col-sm-3">
               <div class="metric-card">
-                <span class="metric-val">3+</span>
-                <span class="metric-label">Live Systems Built</span>
+                <span class="metric-val">4+</span>
+                <span class="metric-label">Real-World Systems Built</span>
               </div>
             </div>
             <div class="col-6 col-sm-3">
@@ -180,8 +198,8 @@
             </div>
             <div class="col-6 col-sm-3">
               <div class="metric-card">
-                <span class="metric-val">Real-Time</span>
-                <span class="metric-label">PWAs &amp; Speech APIs</span>
+                <span class="metric-val">Research</span>
+                <span class="metric-label">AI, Analytics &amp; Pubs</span>
               </div>
             </div>
           </div>
@@ -205,8 +223,9 @@
           </div>
           <div class="hero-quick-meta d-flex flex-wrap justify-content-center gap-2">
             <span class="meta-pill"><i class="bi bi-geo-alt text-brand me-1"></i>Pangasinan, PH</span>
-            <span class="meta-pill"><i class="bi bi-mortarboard text-brand me-1"></i>DIT, UC Baguio</span>
-            <span class="meta-pill"><i class="bi bi-shield-check text-brand me-1"></i>Production Tested</span>
+            <span class="meta-pill"><i class="bi bi-mortarboard text-brand me-1"></i>DIT, UC Baguio (Apr 2026)</span>
+            <span class="meta-pill"><i class="bi bi-building-check text-brand me-1"></i>PSU Faculty</span>
+            <span class="meta-pill availability-meta-pill"><span class="pulse-dot"></span> Open for Remote Projects</span>
           </div>
         </div>
       </div>
@@ -220,12 +239,12 @@
         <div class="row g-4 g-lg-5 align-items-center">
           <div class="col-lg-5">
             <div class="section-kicker">Background &amp; Approach</div>
-            <h2 class="section-title">Grounded in Computer Science, Driven by Practical Building.</h2>
+            <h2 class="section-title">At the Intersection of Technology, Education &amp; Research</h2>
             <p class="text-body-bright mt-3">
-              I am an Assistant Professor in Information Technology at Pangasinan State University – San Carlos Campus, and earned my Doctor in Information Technology (DIT) degree from the University of the Cordilleras.
+              I work at the intersection of technology, education, and research. As a Full-Stack Developer, I build practical web applications, database-driven systems, and API-integrated solutions. As an IT Educator at Pangasinan State University, I teach and mentor future technology professionals and supervise capstone engineering teams.
             </p>
             <p class="text-body-bright">
-              While I enjoy teaching and research in AI and data analytics, my true passion has always been building working software. I like taking ideas from scratch and turning them into fast, reliable web applications that solve tangible problems for family, communities, and real users.
+              As a Researcher with a completed Doctor of Information Technology (DIT) degree from the University of the Cordilleras, I explore artificial intelligence, data analytics, educational technology, and information systems to understand problems and develop practical, evidence-based solutions for organizations, businesses, and communities.
             </p>
             <div class="d-flex gap-3 mt-4">
               <a href="https://orcid.org/0000-0003-1866-9274" target="_blank" rel="noopener" class="btn btn-sm btn-subtle">
@@ -241,32 +260,83 @@
             <div class="row g-3 g-lg-4">
               <div class="col-sm-6">
                 <div class="value-card">
-                  <div class="value-icon"><i class="bi bi-shield-lock-fill"></i></div>
-                  <h4 class="value-title">Data &amp; Financial Integrity</h4>
-                  <p class="value-desc">Focusing on solid database design, strict row-level locking (InnoDB <code>FOR UPDATE</code>), transaction safety, and double-entry balance ledgers.</p>
+                  <div class="value-icon"><i class="bi bi-terminal-fill"></i></div>
+                  <h4 class="value-title">Full-Stack &amp; Web Systems</h4>
+                  <p class="value-desc">Developing practical web applications, database-driven platforms, clean RESTful APIs, and transaction-controlled architectures.</p>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="value-card">
-                  <div class="value-icon"><i class="bi bi-lightning-charge-fill"></i></div>
-                  <h4 class="value-title">Real-Time Web &amp; PWAs</h4>
-                  <p class="value-desc">Integrating practical hardware features like Web Speech API voice announcers for sports courts, mobile camera QR scanning, and silent notification beepers.</p>
+                  <div class="value-icon"><i class="bi bi-mortarboard-fill"></i></div>
+                  <h4 class="value-title">IT Education &amp; Mentoring</h4>
+                  <p class="value-desc">Teaching university IT courses, designing instructional laboratory materials, and mentoring undergraduate students and capstone teams.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="value-card">
+                  <div class="value-icon"><i class="bi bi-cpu-fill"></i></div>
+                  <h4 class="value-title">Applied Research &amp; Analytics</h4>
+                  <p class="value-desc">Investigating AI models, HR analytics, and educational technologies using empirical methodology and bibliometrics (SPSS, VOSviewer).</p>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="value-card">
                   <div class="value-icon"><i class="bi bi-people-fill"></i></div>
-                  <h4 class="value-title">Community &amp; Real Initiatives</h4>
-                  <p class="value-desc">Building software out of personal initiative to help communities — providing free alternatives to expensive subscription apps for local clubs and drivers.</p>
+                  <h4 class="value-title">Practical Community Solutions</h4>
+                  <p class="value-desc">Turning real-world operational challenges into functional digital solutions for businesses, institutions, and local communities.</p>
                 </div>
               </div>
-              <div class="col-sm-6">
-                <div class="value-card">
-                  <div class="value-icon"><i class="bi bi-check2-circle"></i></div>
-                  <h4 class="value-title">Testing &amp; Code Quality</h4>
-                  <p class="value-desc">Using modern automated testing workflows like Playwright and Axe-Core to verify end-to-end checkout flows and ensure web accessibility.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="experience" class="section-padding dark-section">
+      <div class="container">
+        <div class="text-center max-w-700 mx-auto mb-4 pb-1">
+          <div class="section-kicker">Career &amp; Leadership</div>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-subtitle">
+            A track record of combining software instruction, database design, student mentorship, and institutional systems development.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6 d-flex">
+            <div class="experience-card w-100">
+              <div class="experience-header">
+                <div>
+                  <div class="exp-role-badge mb-2"><i class="bi bi-person-badge me-1"></i> Faculty &amp; Systems Developer</div>
+                  <h3 class="exp-title">Assistant Professor I</h3>
+                  <div class="exp-org">Pangasinan State University – San Carlos Campus</div>
                 </div>
+                <span class="exp-date-pill"><i class="bi bi-calendar3 me-1"></i> Sep 2024 – Present</span>
               </div>
+              <ul class="exp-list">
+                <li>Teach undergraduate IT courses in web development, web systems and technologies, operating systems, computer networks, database management, discrete mathematics, and introductory Laravel development.</li>
+                <li>Design instructional modules, laboratory manuals, and technology-enhanced learning resources; mentor capstone teams through requirements analysis, system architecture, development, testing, and documentation.</li>
+                <li>Develop and maintain web-based applications for academic and institutional initiatives while conducting scholarly research and contributing to academic publications.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex">
+            <div class="experience-card w-100">
+              <div class="experience-header">
+                <div>
+                  <div class="exp-role-badge mb-2"><i class="bi bi-mortarboard me-1"></i> Faculty &amp; Lab Instructor</div>
+                  <h3 class="exp-title">Instructor I</h3>
+                  <div class="exp-org">Pangasinan State University – San Carlos Campus</div>
+                </div>
+                <span class="exp-date-pill"><i class="bi bi-calendar3 me-1"></i> Aug 2016 – Sep 2024</span>
+              </div>
+              <ul class="exp-list">
+                <li>Delivered project-based and laboratory-centered instruction in software development, relational database design, networking, and systems analysis.</li>
+                <li>Supervised capstone projects and undergraduate research, producing instructional materials that support curriculum delivery and student learning.</li>
+                <li>Contributed to academic and departmental initiatives promoting technology-enhanced education and practical student engineering skills.</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -278,15 +348,15 @@
       <div class="container">
         <div class="text-center max-w-700 mx-auto mb-4 pb-1">
           <div class="section-kicker">Featured Work</div>
-          <h2 class="section-title">Systems I Have Built</h2>
+          <h2 class="section-title">Engineered Systems &amp; Practical Solutions</h2>
           <p class="section-subtitle">
-            A look at three practical platforms built for family, sports clubs, and independent community initiatives.
+            A selection of production systems, sports platforms, and institutional applications built to solve operational problems.
           </p>
         </div>
 
         <div class="row g-4">
           <!-- Project 1: PickleDink -->
-          <div class="col-lg-4 col-md-6 d-flex">
+          <div class="col-lg-6 col-12 d-flex">
             <article class="project-bento-card w-100">
               <div class="project-preview-wrap">
                 <img src="assets/img/projects/pickledink.jpg" alt="PickleDink Queue Management System" class="project-preview-img">
@@ -295,18 +365,31 @@
                 </div>
               </div>
               <div class="project-bento-body">
-                <div class="project-category">Sports Community PWA</div>
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+                  <div class="project-category">Sports Community PWA</div>
+                  <div class="project-role-chip"><i class="bi bi-person-gear"></i> Full-Stack Developer / Sole Creator &amp; Architect</div>
+                </div>
                 <h3 class="project-bento-title">PickleDink</h3>
-                <p class="project-bento-desc">
-                  A real-time court queue and analytics system built for a club of competitive and professional pickleball players, offering a free alternative to commercial paid apps.
-                </p>
+                
+                <div class="project-narrative-flow">
+                  <div class="narrative-row">
+                    <span class="narrative-label">Problem:</span> The local competitive pickleball club relied on manual whiteboard lists and physical paddle stacks, causing match order disputes, while commercial apps required monthly subscriptions.
+                  </div>
+                  <div class="narrative-row">
+                    <span class="narrative-label">Solution:</span> Architected an open, automated kiosk and mobile PWA managing doubles/singles court rotations, dynamic Elo rating leaderboards, and instant player match calling without subscription fees.
+                  </div>
+                  <div class="narrative-row">
+                    <span class="narrative-label">Impact:</span> Eliminated manual whiteboard arguments, automated court rotations, and provided voice-synthesized match announcements directly over court noise.
+                  </div>
+                </div>
+
                 <div class="key-feats">
-                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> Dynamic Elo Rating Leaderboards</div>
-                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> Big-Screen TV Announcer Mode (TTS)</div>
-                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> VIP "Beeper" Targeted Silent Push Alerts</div>
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> Dynamic Elo Rating &amp; Instant Leaderboards</div>
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> Big-Screen TV Announcer Mode (Web Speech TTS)</div>
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> Silent "Beeper" QR Push Notification Kiosk</div>
                 </div>
                 <div class="tech-tags">
-                  <span>PHP</span><span>MySQL</span><span>PWA</span><span>Web Speech API</span><span>jsQR</span><span>Vanilla JS</span>
+                  <span>PHP</span><span>MySQL</span><span>PWA</span><span>Web Speech API</span><span>jsQR</span><span>Bootstrap 5</span><span>Vanilla JS</span>
                 </div>
                 <div class="project-bento-footer mt-auto pt-3 d-flex gap-2">
                   <button type="button" class="btn btn-sm btn-brand flex-grow-1" data-bs-toggle="modal" data-bs-target="#modalPickleDink">
@@ -321,24 +404,37 @@
           </div>
 
           <!-- Project 2: SakayPH -->
-          <div class="col-lg-4 col-md-6 d-flex">
+          <div class="col-lg-6 col-12 d-flex">
             <article class="project-bento-card w-100">
               <div class="project-preview-wrap">
                 <img src="assets/img/projects/sakayph.png" alt="SakayPH Carpool & Chauffeur Platform" class="project-preview-img">
                 <div class="project-overlay">
-                  <span class="badge-status"><span class="status-dot"></span> Live in Production</span>
+                  <span class="badge-status warning"><span class="status-dot warning"></span> Production Prototype</span>
                 </div>
               </div>
               <div class="project-bento-body">
-                <div class="project-category">Fintech &amp; Escrow Platform</div>
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+                  <div class="project-category">Fintech &amp; Commuter Platform</div>
+                  <div class="project-role-chip"><i class="bi bi-person-gear"></i> Full-Stack Developer &amp; Database Architect</div>
+                </div>
                 <h3 class="project-bento-title">SakayPH</h3>
-                <p class="project-bento-desc">
-                  A peer-to-peer carpool and driver platform built as an initiative to help local drivers and commuters with secure escrow payments, anti-fraud controls, and OCR verification.
-                </p>
+                
+                <div class="project-narrative-flow">
+                  <div class="narrative-row">
+                    <span class="narrative-label">Problem:</span> Informal carpool groups on social media routinely suffer from payment cancellations, no-shows, lack of verified credentials, and vulnerability to payment disputes.
+                  </div>
+                  <div class="narrative-row">
+                    <span class="narrative-label">Solution:</span> Engineered a peer-to-peer ride matching and carpool platform featuring automated 24-hour escrow protection, OCR driver onboarding verification, and transaction-safe payment workflows.
+                  </div>
+                  <div class="narrative-row">
+                    <span class="narrative-label">Impact:</span> Implemented transaction-safe payment workflows using MySQL/InnoDB transactions and row-level locking with <code>SELECT ... FOR UPDATE</code> to reduce race conditions during concurrent wallet and escrow operations.
+                  </div>
+                </div>
+
                 <div class="key-feats">
-                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> 24-Hour Automated Escrow Release Engine</div>
-                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> Zero Double-Spend (InnoDB Row Locking)</div>
-                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> OCR Driver License &amp; OR/CR Document Scanner</div>
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> Automated 24h Escrow Release Engine</div>
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> Concurrency Control (<code>SELECT ... FOR UPDATE</code>)</div>
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> OCR Driver License &amp; Vehicle Document Scanner</div>
                 </div>
                 <div class="tech-tags">
                   <span>PHP (PDO)</span><span>MySQL InnoDB</span><span>PayMongo API</span><span>OCR.space</span><span>Brevo API</span><span>Leaflet</span>
@@ -356,7 +452,7 @@
           </div>
 
           <!-- Project 3: La Mesa -->
-          <div class="col-lg-4 col-md-6 d-flex">
+          <div class="col-lg-6 col-12 d-flex">
             <article class="project-bento-card w-100">
               <div class="project-preview-wrap">
                 <img src="assets/img/projects/lamesa.png" alt="La Mesa Restaurant Platform" class="project-preview-img">
@@ -365,15 +461,28 @@
                 </div>
               </div>
               <div class="project-bento-body">
-                <div class="project-category">Restaurant Logistics System</div>
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+                  <div class="project-category">Commercial Operations System</div>
+                  <div class="project-role-chip"><i class="bi bi-person-gear"></i> Full-Stack Developer &amp; QA Engineer</div>
+                </div>
                 <h3 class="project-bento-title">La Mesa</h3>
-                <p class="project-bento-desc">
-                  A custom food ordering and delivery system engineered for my sister's restaurant business in Guernsey, Channel Islands (UK), with multi-role portals and local parish zoning.
-                </p>
+                
+                <div class="project-narrative-flow">
+                  <div class="narrative-row">
+                    <span class="narrative-label">Problem:</span> Commercial food ordering apps impose steep commissions and do not support the local postal zoning of Guernsey, Channel Islands (distinct GY parishes).
+                  </div>
+                  <div class="narrative-row">
+                    <span class="narrative-label">Solution:</span> Developed a custom food ordering and delivery system engineered for my sister's restaurant business in Guernsey, Channel Islands, UK, with multi-role portals and local parish delivery zoning.
+                  </div>
+                  <div class="narrative-row">
+                    <span class="narrative-label">Impact:</span> Provides direct digital ordering and delivery management without relying exclusively on third-party marketplace platforms, verified by Playwright E2E and Axe-Core accessibility testing.
+                  </div>
+                </div>
+
                 <div class="key-feats">
-                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> 4 Portals (Super Admin, Owner, Rider, Customer)</div>
-                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> Guernsey GY Postcode &amp; Parish Auto-Sync</div>
-                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> Playwright + Axe-Core Automated Testing</div>
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> 4 Role Portals (Super Admin, Owner, Rider, Customer)</div>
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> Channel Islands GY Postcode &amp; Parish Auto-Sync</div>
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> Playwright E2E Testing &amp; Axe-Core Audits</div>
                 </div>
                 <div class="tech-tags">
                   <span>PHP</span><span>MySQL</span><span>AJAX</span><span>Bootstrap 5</span><span>Playwright</span><span>Axe-Core</span><span>Revolut Pay</span>
@@ -389,6 +498,62 @@
               </div>
             </article>
           </div>
+
+          <!-- Project 4: PSU Pageant Tabulation System -->
+          <div class="col-lg-6 col-12 d-flex">
+            <article class="project-bento-card w-100">
+              <div class="project-preview-wrap">
+                <div class="pageant-preview-graphic">
+                  <div class="pageant-emblem">
+                    <div class="pageant-icon-wrap">
+                      <i class="bi bi-award-fill"></i>
+                    </div>
+                    <div class="pageant-title-badge">PSU Pageant Tabulation System</div>
+                    <div class="pageant-sub-badge">Real-Time Wireless Scoring &amp; Audit Engine</div>
+                  </div>
+                </div>
+                <div class="project-overlay">
+                  <span class="badge-status"><span class="status-dot"></span> IPOPHL Registered</span>
+                </div>
+              </div>
+              <div class="project-bento-body">
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+                  <div class="project-category">Institutional Software</div>
+                  <div class="project-role-chip"><i class="bi bi-clipboard-data"></i> System Analyst / Co-Developer</div>
+                </div>
+                <h3 class="project-bento-title">PSU Pageant Tabulation System</h3>
+                
+                <div class="project-narrative-flow">
+                  <div class="narrative-row">
+                    <span class="narrative-label">Problem:</span> University pageants and competitions historically used paper score sheets and manual spreadsheets, resulting in slow score consolidation, calculation risks, and audit delays.
+                  </div>
+                  <div class="narrative-row">
+                    <span class="narrative-label">Solution:</span> Co-engineered a real-time digital tabulation and audit platform allowing judges to securely input criteria scores from mobile/tablet devices with automated ranking and verification.
+                  </div>
+                  <div class="narrative-row">
+                    <span class="narrative-label">Impact:</span> Streamlined scoring and result computation while improving transparency, consistency, and speed of official tabulation; covered by an official IPOPHL copyright registration.
+                  </div>
+                </div>
+
+                <div class="key-feats">
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> Real-Time Multi-Judge Wireless Scoring</div>
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> Dynamic Criteria Weighting &amp; Tie-Breaker Logic</div>
+                  <div class="feat-item"><i class="bi bi-check2 text-brand"></i> Official Audit Trail &amp; Printable Summary Sheets</div>
+                </div>
+                <div class="tech-tags">
+                  <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Bootstrap</span><span>Audit Controls</span><span>IPOPHL Certified</span>
+                </div>
+                <div class="project-bento-footer mt-auto pt-3 d-flex gap-2">
+                  <button type="button" class="btn btn-sm btn-brand flex-grow-1" data-bs-toggle="modal" data-bs-target="#modalPageant">
+                    <i class="bi bi-code-square me-1"></i>System Details
+                  </button>
+                  <span class="btn btn-sm btn-outline-light text-dim disabled" title="Institutional Software">
+                    <i class="bi bi-shield-check text-brand me-1"></i>Registered
+                  </span>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -400,75 +565,115 @@
           <div class="section-kicker">Core Toolset</div>
           <h2 class="section-title">Skills &amp; Technical Capabilities</h2>
           <p class="section-subtitle">
-            Technologies and practices I use to build dependable, maintainable software.
+            Technologies, architectures, and scientific toolsets I apply across software development, systems analysis, and academic research.
           </p>
         </div>
 
         <div class="row g-4">
-          <div class="col-lg-3 col-md-6 d-flex">
+          <!-- Skill 1: Full-Stack & Web Development -->
+          <div class="col-lg-4 col-md-6 d-flex">
             <div class="skill-group-card w-100">
               <div class="skill-icon-header">
-                <i class="bi bi-hdd-network-fill"></i>
-                <h4>Backend &amp; Database</h4>
+                <i class="bi bi-code-slash"></i>
+                <h4>Full-Stack &amp; Web Development</h4>
               </div>
               <ul class="skill-list">
-                <li><strong>PHP 8+ &amp; PDO</strong> (Prepared architecture)</li>
-                <li><strong>MySQL / MariaDB</strong> (InnoDB relational design)</li>
-                <li><strong>Concurrency Control</strong> (<code>SELECT ... FOR UPDATE</code>)</li>
-                <li><strong>Escrow &amp; Double-Entry Ledgers</strong></li>
-                <li><strong>RESTful API Design &amp; Webhooks</strong></li>
-                <li><strong>CSRF Protection &amp; Session Hardening</strong></li>
+                <li><strong>PHP 8+ &amp; Modern OOP</strong> (MVC patterns, structured programming)</li>
+                <li><strong>JavaScript (ES6+)</strong> (Vanilla JS, DOM API, Async/Await)</li>
+                <li><strong>RESTful API Architecture</strong> (JSON endpoints, webhook listeners)</li>
+                <li><strong>Responsive Frontends</strong> (Bootstrap 5, Semantic HTML5, Modern CSS)</li>
+                <li><strong>Single-Page Kiosks &amp; PWAs</strong> (Service Workers, offline caching)</li>
+                <li><strong>AJAX &amp; Dynamic UI State</strong> (Zero-reload reactive user interfaces)</li>
               </ul>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex">
+          <!-- Skill 2: Database & Data Systems -->
+          <div class="col-lg-4 col-md-6 d-flex">
             <div class="skill-group-card w-100">
               <div class="skill-icon-header">
-                <i class="bi bi-window-fullscreen"></i>
-                <h4>Frontend &amp; Mobile Web</h4>
+                <i class="bi bi-database-check"></i>
+                <h4>Database &amp; Data Systems</h4>
               </div>
               <ul class="skill-list">
-                <li><strong>Modern JavaScript</strong> (ES6+, Vanilla JS, AJAX)</li>
-                <li><strong>Progressive Web Apps</strong> (PWA &amp; Service Workers)</li>
-                <li><strong>Web Speech API</strong> (Text-to-Speech synthesis)</li>
-                <li><strong>Camera QR Scanning</strong> (jsQR library)</li>
-                <li><strong>Bootstrap 5 &amp; Modern CSS</strong></li>
-                <li><strong>Responsive Mobile-First UI/UX</strong></li>
+                <li><strong>MySQL &amp; MariaDB</strong> (InnoDB relational design, normalization)</li>
+                <li><strong>Relational Integrity &amp; ACID</strong> (Foreign keys, constraints, indexing)</li>
+                <li><strong>Concurrency Control</strong> (Row-level locking via <code>SELECT ... FOR UPDATE</code>)</li>
+                <li><strong>Data Protection &amp; Sanitization</strong> (PDO Prepared Statements)</li>
+                <li><strong>Transactional Ledgers</strong> (Balance tracking and audit histories)</li>
+                <li><strong>Database Administration</strong> (Data backups, migrations, performance)</li>
               </ul>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex">
+          <!-- Skill 3: APIs & Integrations -->
+          <div class="col-lg-4 col-md-6 d-flex">
             <div class="skill-group-card w-100">
               <div class="skill-icon-header">
-                <i class="bi bi-gear-wide-connected"></i>
-                <h4>Integrations &amp; Testing</h4>
+                <i class="bi bi-puzzle"></i>
+                <h4>APIs &amp; Integrations</h4>
               </div>
               <ul class="skill-list">
-                <li><strong>PayMongo API</strong> (Cards, GCash, Payouts)</li>
-                <li><strong>OCR.space API</strong> (Document text parsing)</li>
-                <li><strong>Brevo API</strong> (Transactional emails)</li>
-                <li><strong>Playwright</strong> (Automated E2E testing)</li>
-                <li><strong>Axe-Core</strong> (Accessibility verification)</li>
-                <li><strong>Leaflet &amp; OpenStreetMap</strong></li>
+                <li><strong>Payment Gateways</strong> (PayMongo, Revolut Pay, QR payments)</li>
+                <li><strong>OCR &amp; Document Parsing</strong> (OCR.space document extraction)</li>
+                <li><strong>Transactional Email Services</strong> (Brevo / Sendinblue REST API)</li>
+                <li><strong>Hardware &amp; Browser APIs</strong> (Web Speech TTS, jsQR camera scanner)</li>
+                <li><strong>Mapping &amp; Geocoding</strong> (Leaflet, OpenStreetMap)</li>
+                <li><strong>Webhook Verification</strong> (Payload security &amp; event validation)</li>
               </ul>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex">
+          <!-- Skill 4: Testing & Developer Tools -->
+          <div class="col-lg-4 col-md-6 d-flex">
             <div class="skill-group-card w-100">
               <div class="skill-icon-header">
-                <i class="bi bi-cpu-fill"></i>
-                <h4>Academic &amp; Research</h4>
+                <i class="bi bi-check2-circle"></i>
+                <h4>Testing &amp; Developer Tools</h4>
               </div>
               <ul class="skill-list">
-                <li><strong>Doctor in IT (DIT)</strong> &bull; Univ. of the Cordilleras</li>
-                <li><strong>Artificial Intelligence</strong> &amp; ML Models</li>
-                <li><strong>Data &amp; HR Analytics</strong></li>
-                <li><strong>Bibliometric Analysis</strong></li>
-                <li><strong>Algorithmic Queue Design</strong> (Elo rating)</li>
-                <li><strong>Educational Technology Systems</strong></li>
+                <li><strong>Playwright</strong> (Automated end-to-end regression testing)</li>
+                <li><strong>Axe-Core</strong> (Automated WCAG accessibility audits)</li>
+                <li><strong>Version Control</strong> (Git, GitHub, multi-branch workflows)</li>
+                <li><strong>Local Environments &amp; Servers</strong> (Apache, XAMPP, environment config)</li>
+                <li><strong>Performance Profiling</strong> (Lighthouse audits, asset optimization)</li>
+                <li><strong>Application Hardening</strong> (CSRF tokens, secure session management)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Skill 5: Systems & Networking -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="skill-group-card w-100">
+              <div class="skill-icon-header">
+                <i class="bi bi-hdd-network"></i>
+                <h4>Systems &amp; Networking</h4>
+              </div>
+              <ul class="skill-list">
+                <li><strong>Network Infrastructure &amp; Routing</strong> (LAN/WAN configuration)</li>
+                <li><strong>IP Addressing &amp; Subnetting</strong> (IPv4/IPv6, DHCP, DNS management)</li>
+                <li><strong>Server Administration</strong> (Linux / Windows Server, Apache HTTP)</li>
+                <li><strong>Network Troubleshooting</strong> (Diagnostics, packet inspection, connectivity)</li>
+                <li><strong>Access Control &amp; Network Security</strong> (Firewalls, RBAC, port controls)</li>
+                <li><strong>Lab Systems &amp; Hardware</strong> (Workstation deployment and maintenance)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Skill 6: Research, AI & Analytics -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="skill-group-card w-100">
+              <div class="skill-icon-header">
+                <i class="bi bi-bar-chart-steps"></i>
+                <h4>Research, AI &amp; Analytics</h4>
+              </div>
+              <ul class="skill-list">
+                <li><strong>Machine Learning Applications</strong> (Recommender systems, skills extraction)</li>
+                <li><strong>Statistical Analysis</strong> (SPSS, descriptive &amp; inferential stats)</li>
+                <li><strong>Bibliometric Science</strong> (VOSviewer, Bibliometrix R-package)</li>
+                <li><strong>Scholarly Data Retrieval</strong> (Scopus, OpenAlex, Google Scholar)</li>
+                <li><strong>Educational Technology Research</strong> (LMS adoption, digital workflows)</li>
+                <li><strong>Academic Peer Review &amp; Mentorship</strong> (Faculty instruction &amp; advising)</li>
               </ul>
             </div>
           </div>
@@ -476,52 +681,195 @@
       </div>
     </section>
 
-    <!-- Research & Publications Section -->
+    <!-- Selected Research & Publications Section -->
     <section id="research" class="section-padding dark-section">
       <div class="container">
-        <div class="row g-4 g-lg-5 align-items-center">
-          <div class="col-lg-6">
-            <div class="section-kicker">Research &amp; Publications</div>
-            <h2 class="section-title">Academic Background &amp; Research Work</h2>
-            <p class="text-body-bright mt-3">
-              As an Assistant Professor at Pangasinan State University, my research work touches on Artificial Intelligence, recommendation models, data analytics, and digital learning transformation.
-            </p>
-            <p class="text-body-bright">
-              Having academic research experience instills a healthy habit of structured thinking, deep problem breakdown, and data integrity that carries directly into my software development work.
-            </p>
-            <div class="d-flex flex-wrap gap-3 mt-4">
-              <a href="https://orcid.org/0000-0003-1866-9274" target="_blank" rel="noopener" class="btn btn-brand">
-                <i class="bi bi-journal-check me-2"></i>View ORCID Profile
-              </a>
-              <a href="#contact" class="btn btn-outline-light">
-                <i class="bi bi-chat-quote me-2"></i>Get in Touch
-              </a>
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <div class="section-kicker">Applied Inquiry &amp; Analytics</div>
+          <h2 class="section-title">Selected Research &amp; Publications</h2>
+          <p class="section-subtitle">
+            Academic research exploring Artificial Intelligence, recommendation systems, human resource analytics, and digital learning transformation.
+          </p>
+        </div>
+
+        <div class="row g-4 g-lg-5">
+          <!-- 5 Verified Research Publications List -->
+          <div class="col-lg-7">
+            <h4 class="h5 text-white fw-bold mb-3 d-flex align-items-center gap-2">
+              <i class="bi bi-journal-text text-brand"></i> Research Publications
+            </h4>
+
+            <!-- Paper 1 -->
+            <div class="publication-card">
+              <div class="pub-icon-col">
+                <i class="bi bi-file-earmark-code"></i>
+              </div>
+              <div class="pub-body">
+                <div class="pub-meta-row">
+                  <span class="pub-year-pill">2024</span>
+                  <span class="pub-topic-pill">Applied AI &bull; HR Analytics</span>
+                </div>
+                <h5 class="pub-title">AI-Based Resume Skills Extractor and Recommender Modules for State University Human Resource Analytics System</h5>
+                <p class="text-dim small mb-0 mt-1">Paul Nigel S. Abalos, et al.</p>
+              </div>
+            </div>
+
+            <!-- Paper 2 -->
+            <div class="publication-card">
+              <div class="pub-icon-col">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <div class="pub-body">
+                <div class="pub-meta-row">
+                  <span class="pub-year-pill">2024</span>
+                  <span class="pub-topic-pill">Data Analytics &bull; Recommender Systems</span>
+                </div>
+                <h5 class="pub-title">A Data-Driven Profile-Based Analytics for Career Path and Upskilling Recommendations in HRS</h5>
+                <p class="text-dim small mb-0 mt-1">Paul Nigel S. Abalos, et al.</p>
+              </div>
+            </div>
+
+            <!-- Paper 3 -->
+            <div class="publication-card">
+              <div class="pub-icon-col">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <div class="pub-body">
+                <div class="pub-meta-row">
+                  <span class="pub-year-pill">2026</span>
+                  <span class="pub-topic-pill">AI Impact &bull; Educational Decision-Making</span>
+                </div>
+                <h5 class="pub-title">The Influence of Artificial Intelligence on Human Decision-Making, Productivity, and Safety in the Field of Education at Pangasinan State University</h5>
+                <p class="text-dim small mb-0 mt-1">Paul Nigel S. Abalos, et al.</p>
+              </div>
+            </div>
+
+            <!-- Paper 4 -->
+            <div class="publication-card">
+              <div class="pub-icon-col">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <div class="pub-body">
+                <div class="pub-meta-row">
+                  <span class="pub-year-pill">2023</span>
+                  <span class="pub-topic-pill">Higher Ed &bull; Systems Assessment</span>
+                </div>
+                <h5 class="pub-title">Assessment of Online Learning System to College Students of State Universities in Region I</h5>
+                <p class="text-dim small mb-0 mt-1">Paul Nigel S. Abalos, et al.</p>
+              </div>
+            </div>
+
+            <!-- Paper 5 -->
+            <div class="publication-card">
+              <div class="pub-icon-col">
+                <i class="bi bi-people"></i>
+              </div>
+              <div class="pub-body">
+                <div class="pub-meta-row">
+                  <span class="pub-year-pill">Institutional</span>
+                  <span class="pub-topic-pill">Digital Learning &bull; Remote Pedagogy</span>
+                </div>
+                <h5 class="pub-title">Microsoft Teams Utilization for Teaching and Learning During Pandemic in Pangasinan State University</h5>
+                <p class="text-dim small mb-0 mt-1">Paul Nigel S. Abalos, et al.</p>
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-6">
-            <div class="research-timeline">
-              <div class="research-item">
-                <div class="research-icon"><i class="bi bi-cpu"></i></div>
-                <div class="research-content">
-                  <h5>Applied AI &amp; Machine Learning</h5>
-                  <p class="text-muted-bright mb-0">Exploring recommendation models, automated classification, and applied machine learning tools.</p>
+          <!-- Research Capabilities & Scientific Toolsets Sidebar -->
+          <div class="col-lg-5">
+            <div class="research-capabilities-box">
+              <h4 class="h5 text-white fw-bold mb-3 d-flex align-items-center gap-2">
+                <i class="bi bi-graph-up-arrow text-brand"></i> Methodologies &amp; Toolset
+              </h4>
+              <p class="text-muted-bright small mb-4">
+                Research training reinforces a discipline of rigorous data validation, problem decomposition, and algorithmic testing that elevates production software engineering.
+              </p>
+
+              <div class="mb-4">
+                <div class="small fw-bold text-white mb-2">Statistical &amp; Quantitative Tools</div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="research-tool-chip highlight"><i class="bi bi-calculator me-1"></i>SPSS</span>
+                  <span class="research-tool-chip"><i class="bi bi-bar-chart me-1"></i>Inferential Statistics</span>
+                  <span class="research-tool-chip"><i class="bi bi-pie-chart me-1"></i>Survey Analytics</span>
                 </div>
               </div>
-              <div class="research-item">
-                <div class="research-icon"><i class="bi bi-graph-up-arrow"></i></div>
-                <div class="research-content">
-                  <h5>Data Analytics &amp; Bibliometrics</h5>
-                  <p class="text-muted-bright mb-0">Analyzing research trends, HR data metrics, and institutional information systems.</p>
+
+              <div class="mb-4">
+                <div class="small fw-bold text-white mb-2">Bibliometric &amp; Science Mapping</div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="research-tool-chip highlight"><i class="bi bi-diagram-2 me-1"></i>VOSviewer</span>
+                  <span class="research-tool-chip highlight"><i class="bi bi-code-square me-1"></i>Bibliometrix (R)</span>
+                  <span class="research-tool-chip"><i class="bi bi-database me-1"></i>Scopus Data</span>
+                  <span class="research-tool-chip"><i class="bi bi-globe me-1"></i>OpenAlex API</span>
                 </div>
               </div>
-              <div class="research-item">
-                <div class="research-icon"><i class="bi bi-mortarboard"></i></div>
-                <div class="research-content">
-                  <h5>Smart Education &amp; Learning Systems</h5>
-                  <p class="text-muted-bright mb-0">Designing user-friendly educational technology tools to support modern campus workflows.</p>
+
+              <div class="mb-4">
+                <div class="small fw-bold text-white mb-2">Research Focus Areas</div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="research-tool-chip">Recommender Systems</span>
+                  <span class="research-tool-chip">Resume Skills Extraction</span>
+                  <span class="research-tool-chip">Educational Tech Adoption</span>
+                  <span class="research-tool-chip">AI Safety &amp; Ethics</span>
                 </div>
               </div>
+
+              <div class="pt-3 border-top border-secondary border-opacity-25">
+                <a href="https://orcid.org/0000-0003-1866-9274" target="_blank" rel="noopener" class="btn btn-sm btn-brand w-100">
+                  <i class="bi bi-journal-check me-2"></i>Verify on ORCID Profile (0000-0003-1866-9274)
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section-padding">
+      <div class="container">
+        <div class="text-center max-w-700 mx-auto mb-4 pb-1">
+          <div class="section-kicker">Academic Foundation</div>
+          <h2 class="section-title">Education &amp; Credentials</h2>
+          <p class="section-subtitle">
+            Formal academic degrees grounding practical software engineering in advanced computer science and empirical research.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Degree 1: DIT -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="education-card featured w-100">
+              <div class="edu-status-pill"><i class="bi bi-check-circle-fill"></i> Completed: April 30, 2026</div>
+              <h3 class="edu-degree">Doctor of Information Technology (DIT)</h3>
+              <div class="edu-school"><i class="bi bi-building me-1"></i> University of the Cordilleras</div>
+              <p class="edu-desc">
+                Advanced doctoral research focusing on applied artificial intelligence, human resource analytics systems, recommendation algorithms, and educational technology frameworks.
+              </p>
+            </div>
+          </div>
+
+          <!-- Degree 2: MIT -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="education-card w-100">
+              <div class="edu-status-pill"><i class="bi bi-calendar-check"></i> 2016 – 2019</div>
+              <h3 class="edu-degree">Master in Information Technology (MIT)</h3>
+              <div class="edu-school"><i class="bi bi-building me-1"></i> Colegio de Dagupan</div>
+              <p class="edu-desc">
+                Postgraduate specialization in software engineering architectures, normalized database systems, enterprise IT solutions, and technology education methods.
+              </p>
+            </div>
+          </div>
+
+          <!-- Degree 3: BSIT -->
+          <div class="col-lg-4 col-md-12 d-flex">
+            <div class="education-card w-100">
+              <div class="edu-status-pill"><i class="bi bi-calendar-check"></i> 2012 – 2016</div>
+              <h3 class="edu-degree">Bachelor of Science in Information Technology (BSIT)</h3>
+              <div class="edu-school"><i class="bi bi-building me-1"></i> Colegio de Dagupan</div>
+              <p class="edu-desc">
+                Undergraduate foundation covering object-oriented programming, data structures, relational database normalization, web development, and network infrastructure.
+              </p>
             </div>
           </div>
         </div>
@@ -529,13 +877,33 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section-padding">
+    <section id="contact" class="section-padding dark-section">
       <div class="container">
+        <!-- Open to Opportunities Callout Banner -->
+        <div class="opportunities-callout text-start mb-4">
+          <div class="row align-items-center g-3">
+            <div class="col-lg-8">
+              <div class="opp-badge mb-2">
+                <span class="status-dot"></span> Available for Engagements
+              </div>
+              <h3 class="h4 text-white fw-bold mb-2">Open to Part-Time, Freelance &amp; Remote Opportunities</h3>
+              <p class="text-muted-bright mb-0">
+                Looking for opportunities where I can apply full-stack development, database architecture, systems analysis, or technical research. Open to project-based engineering, web application builds, API integrations, consulting, or technical advisory roles.
+              </p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="mailto:paulnigelabalos@gmail.com" class="btn btn-brand">
+                <i class="bi bi-envelope-check me-2"></i>Discuss an Opportunity
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div class="contact-cta-card text-center">
           <div class="section-kicker">Let's Connect</div>
           <h2 class="section-title text-white">Have a Project in Mind or Want to Collaborate?</h2>
           <p class="section-subtitle mx-auto text-muted-bright mb-4">
-            Whether you are looking for a full-stack developer to help build a web application, or interested in collaborating on tech initiatives — feel free to reach out.
+            Whether you are looking for a full-stack developer to help build a web application, an educator for technical mentoring, or a researcher for tech initiatives — feel free to reach out.
           </p>
 
           <div class="row g-3 justify-content-center">
@@ -607,7 +975,7 @@
               <div class="case-block">
                 <h4 class="case-heading"><i class="bi bi-info-circle text-brand me-2"></i> Why I Built It</h4>
                 <p>
-                  Most existing court management apps come with monthly subscription tiers and paid version locks. For our local club of competitive and professional pickleball players, physical whiteboard lists and paddle stacks were causing long arguments, while paid software wasn't practical. I built PickleDink to give our community a 100% free, automated kiosk that handles court rotations fairly.
+                  Most existing court management apps come with monthly subscription tiers and paid version locks. For our local club of competitive and professional pickleball players, physical whiteboard lists and paddle stacks were causing long arguments, while paid software wasn't practical. I built PickleDink to give our community a free, community-oriented automated kiosk that handles court rotations fairly.
                 </p>
               </div>
 
@@ -652,6 +1020,11 @@
             <div class="col-lg-4">
               <div class="case-sidebar">
                 <div class="sidebar-block">
+                  <h6>My Role</h6>
+                  <p class="sidebar-status-desc mb-0"><strong>Full-Stack Developer / Sole Creator &amp; Architect</strong></p>
+                </div>
+
+                <div class="sidebar-block mt-3">
                   <h6>Tech Stack</h6>
                   <ul class="sidebar-list">
                     <li><span>Format:</span> PWA / Single-Page Kiosk</li>
@@ -659,7 +1032,7 @@
                     <li><span>Database:</span> MySQL Normalized Schema</li>
                     <li><span>Frontend:</span> Vanilla JavaScript, AJAX, Bootstrap</li>
                     <li><span>Hardware APIs:</span> Web Speech API (TTS), jsQR</li>
-                    <li><span>Cost:</span> 100% Free for Community</li>
+                    <li><span>Access:</span> Free for Community Use</li>
                   </ul>
                 </div>
 
@@ -707,7 +1080,7 @@
               <div class="case-block">
                 <h4 class="case-heading"><i class="bi bi-info-circle text-brand me-2"></i> The Motivation &amp; Story</h4>
                 <p>
-                  Big ride-hailing services often take high percentage cuts from drivers, while informal carpool Facebook groups often suffer from payment cancellations, no-shows, and safety concerns. I took the personal initiative to build SakayPH as a working solution to help drivers and passengers connect securely. While the target driver community did not end up adopting it, I am very proud of the engineering behind it — building bank-grade transaction locking, automated escrow, and automated document verification.
+                  Big ride-hailing services often take high percentage cuts from drivers, while informal carpool groups on social media often suffer from payment cancellations, no-shows, and lack of verified driver credentials. I took the personal initiative to build SakayPH as a working solution to help drivers and passengers connect securely. While the target driver community did not end up adopting it, I am proud of the engineering behind it — implementing robust concurrency controls, automated escrow release, and automated document verification.
                 </p>
               </div>
 
@@ -722,8 +1095,8 @@
                   </div>
                   <div class="col-md-6">
                     <div class="arch-box">
-                      <h6>Zero Double-Spend Protection</h6>
-                      <p>Implements strict MySQL InnoDB row-level locking (<code>SELECT ... FOR UPDATE</code>) on driver balance records to prevent concurrent balance exploitation.</p>
+                      <h6>Concurrency Control via Row-Level Locking</h6>
+                      <p>Implemented transaction-safe payment workflows using MySQL/InnoDB transactions and row-level locking with <code>SELECT ... FOR UPDATE</code> to reduce race conditions during concurrent wallet and escrow operations.</p>
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -744,7 +1117,7 @@
               <div class="case-block mt-4">
                 <h4 class="case-heading"><i class="bi bi-shield-lock text-brand me-2"></i> Security Architecture</h4>
                 <p>
-                  Built with 100% prepared PDO statements, anti-CSRF tokens on every action, and secure HTTP-only cookies to ensure comprehensive application security.
+                  Implements application-security practices including PDO prepared statements, anti-CSRF tokens on state-changing requests, and secure HTTP-only cookies for session handling.
                 </p>
               </div>
             </div>
@@ -752,10 +1125,15 @@
             <div class="col-lg-4">
               <div class="case-sidebar">
                 <div class="sidebar-block">
+                  <h6>My Role</h6>
+                  <p class="sidebar-status-desc mb-0"><strong>Full-Stack Developer &amp; Database Architect</strong></p>
+                </div>
+
+                <div class="sidebar-block mt-3">
                   <h6>Tech Stack</h6>
                   <ul class="sidebar-list">
                     <li><span>Architecture:</span> PWA / Service Platform</li>
-                    <li><span>Backend:</span> PHP (100% Prepared PDO)</li>
+                    <li><span>Backend:</span> PHP (Prepared PDO Statements)</li>
                     <li><span>Database:</span> MySQL InnoDB (ACID)</li>
                     <li><span>Payments:</span> PayMongo API Integration</li>
                     <li><span>Document OCR:</span> OCR.space API</li>
@@ -808,7 +1186,7 @@
               <div class="case-block">
                 <h4 class="case-heading"><i class="bi bi-info-circle text-brand me-2"></i> The Motivation &amp; Background</h4>
                 <p>
-                  Commercial delivery platforms take hefty commissions and don't natively support the unique geography of the Channel Islands (Guernsey's distinct parishes and GY1–GY8 postal codes). I built this platform specifically for my sister's restaurant in the UK to handle customer orders, kitchen tracking, delivery dispatch, and payments directly.
+                  Commercial delivery platforms take hefty commissions and don't natively support the unique geography of the Channel Islands (Guernsey's distinct parishes and GY1–GY8 postal codes). I built this platform specifically for my sister's restaurant in the UK to provide direct digital ordering, kitchen tracking, and delivery dispatch without relying exclusively on third-party marketplace platforms.
                 </p>
               </div>
 
@@ -853,6 +1231,11 @@
             <div class="col-lg-4">
               <div class="case-sidebar">
                 <div class="sidebar-block">
+                  <h6>My Role</h6>
+                  <p class="sidebar-status-desc mb-0"><strong>Full-Stack Developer &amp; QA Engineer</strong></p>
+                </div>
+
+                <div class="sidebar-block mt-3">
                   <h6>Tech Stack</h6>
                   <ul class="sidebar-list">
                     <li><span>Architecture:</span> Multi-Role Web Platform</li>
@@ -873,6 +1256,119 @@
                   <a href="https://lamesa.unaux.com" target="_blank" rel="noopener" class="btn btn-brand">
                     <i class="bi bi-box-arrow-up-right me-2"></i>Launch La Mesa
                   </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: PSU Pageant Tabulation System Details -->
+  <div class="modal fade case-study-modal" id="modalPageant" tabindex="-1" aria-labelledby="modalPageantLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0">
+          <div class="d-flex align-items-center gap-2">
+            <span class="badge-tech-pill success"><i class="bi bi-award-fill"></i> Institutional Software</span>
+            <span class="badge-tech-pill"><i class="bi bi-shield-check"></i> IPOPHL Registered</span>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body pt-3 pb-4">
+          <div class="case-study-hero">
+            <div class="pageant-preview-graphic rounded" style="height: 220px;">
+              <div class="pageant-emblem">
+                <div class="pageant-icon-wrap">
+                  <i class="bi bi-award-fill"></i>
+                </div>
+                <div class="pageant-title-badge">PSU Pageant Tabulation System</div>
+                <div class="pageant-sub-badge">Real-Time Scoring &amp; Audit Engine &bull; IPOPHL Registered</div>
+              </div>
+            </div>
+            <div class="case-study-title-wrap">
+              <h2 class="modal-title h4 fw-bold" id="modalPageantLabel">PSU Pageant Tabulation System</h2>
+              <p class="case-hero-desc mb-0">An institutional scoring and tabulation system co-engineered to replace error-prone paper scorecards with real-time digital criteria scoring and audit validation.</p>
+            </div>
+          </div>
+
+          <div class="row g-4 mt-2">
+            <div class="col-lg-8">
+              <div class="case-block">
+                <h4 class="case-heading"><i class="bi bi-info-circle text-brand me-2"></i> Problem &amp; Context</h4>
+                <p>
+                  Major university pageants and institutional competitions traditionally relied on physical scorecards collected by runners and manually transcribed into spreadsheets. Under live audience and stage pressure, manual score tallying caused prolonged delays, arithmetic discrepancies, and high audit stress. The objective was to engineer an automated, verifiable scoring system that delivers instantaneous tabulation with full audit transparency.
+                </p>
+              </div>
+
+              <div class="case-block mt-4">
+                <h4 class="case-heading"><i class="bi bi-cpu text-brand me-2"></i> System Architecture &amp; Engineering</h4>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="arch-box">
+                      <h6>Touch-Optimized Judge Kiosk</h6>
+                      <p>Responsive, single-purpose tablet interface enabling panel judges to review contestant details and submit category scores securely over local network.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="arch-box">
+                      <h6>Real-Time Central Audit Console</h6>
+                      <p>Administrative dashboard that monitors live judge submissions, verifies score completeness, and executes rank aggregation algorithms instantaneously.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="arch-box">
+                      <h6>Weighted Scoring &amp; Tie-Breakers</h6>
+                      <p>Configurable criteria weighting formulas and automated tie-breaker logic to deliver consistent scoring, automated ranking, and transparent results.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="arch-box">
+                      <h6>Immutable Audit Log &amp; Reports</h6>
+                      <p>Complete historical submission logs and instant generation of official signed tabulation summary sheets (PDF) for official board verification.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="case-block mt-4">
+                <h4 class="case-heading"><i class="bi bi-shield-check text-success me-2"></i> Intellectual Property &amp; Governance</h4>
+                <p>
+                  The system's original architecture, database normalization, and scoring algorithm are officially registered and protected under an <strong>IPOPHL Copyright Registration</strong> (Intellectual Property Office of the Philippines).
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="case-sidebar">
+                <div class="sidebar-block">
+                  <h6>My Role &amp; Contribution</h6>
+                  <p class="sidebar-status-desc mb-0"><strong>System Analyst / Co-Developer</strong></p>
+                  <ul class="sidebar-list mt-2">
+                    <li><span>Analysis:</span> Requirements &amp; scoring workflow</li>
+                    <li><span>Database:</span> MySQL normalized audit schema</li>
+                    <li><span>Validation:</span> Tabulation logic &amp; tie-breaking</li>
+                    <li><span>Testing:</span> Live rehearsal &amp; stress audits</li>
+                  </ul>
+                </div>
+
+                <div class="sidebar-block mt-3">
+                  <h6>Tech Stack</h6>
+                  <ul class="sidebar-list">
+                    <li><span>Backend:</span> PHP</li>
+                    <li><span>Database:</span> MySQL (Relational Schema)</li>
+                    <li><span>Frontend:</span> JavaScript, HTML5, Bootstrap</li>
+                    <li><span>Reporting:</span> Automated PDF Summary Sheets</li>
+                    <li><span>Security:</span> Role-based access &amp; audit logging</li>
+                    <li><span>Protection:</span> IPOPHL Copyright Registered</li>
+                  </ul>
+                </div>
+
+                <div class="sidebar-block mt-3">
+                  <h6>Impact</h6>
+                  <p class="sidebar-status-desc mb-0">Streamlined scoring and result computation while improving transparency, consistency, and speed of official tabulation.</p>
                 </div>
               </div>
             </div>
